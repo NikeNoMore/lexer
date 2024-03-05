@@ -20,11 +20,13 @@ struct E {
 
 using Lexem = pair<string, string>;
 set<string> keyword = { "int", "char", "if", "else", "switch", "case", "while", "for", "return", "in", "out" };
-string s_quote = "'", d_quote = "\"", letter = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ", digit = "0123456789";
+string s_quote = "'", d_quote = "\"", letter = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ_", digit = "0123456789";
 string other = "";
 string no_lexem = "";
 map<int, vector<E>> G = {
-{0, {{" ", true, false, 0, no_lexem},
+{0, {E{" ", true, false, 0, no_lexem},
+    E{"\n", true, false, 0, no_lexem},
+    E{"", true, false, 0, no_lexem},
     E("(", true, false, 0, "lpar"),
     E(")", true, false, 0, "rpar"),
     E("{", true, false, 0, "lbrace"),
@@ -128,7 +130,7 @@ pair<int, Lexem> tick(int state, istream& stream, char& cache, string& memory) {
     }
     state = action.next_state;
     if (action.lexem != "id") {
-        if (action.lexem == "end" or action.lexem == "error") {
+        if (action.lexem == "end" or action.lexem == "error" or action.lexem == "opminus") {
             memory = "";
             return { state, Lexem{action.lexem, memory} };
         }
