@@ -6,6 +6,9 @@
 #include <string>
 
 using Lexem = std::pair<std::string, std::string>;
+const Lexem LEX_EMPTY = { "", "" };
+const Lexem LEX_ERROR = { "error", "" };
+const Lexem LEX_EOF = { "end", "" };
 
 class Lexer
 {
