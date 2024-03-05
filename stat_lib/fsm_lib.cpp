@@ -46,7 +46,7 @@ map<int, vector<E>> G = {
     E("-", true, true, 22, no_lexem),
     E(digit, true, true, 23, no_lexem),
     E(other, false, false, -1, "error"),
-    E("#", false, false, -1, no_lexem),}},
+    E("#", false, false, -1, "end"),}},
 
 {2, {E("=", true, false, 3, no_lexem),
     E(other, false, false, 0, "oplt")}},
@@ -128,6 +128,10 @@ pair<int, Lexem> tick(int state, istream& stream, char& cache, string& memory) {
     }
     state = action.next_state;
     if (action.lexem != "id") {
+        if (action.lexem == "end" or action.lexem == "error") {
+            memory = "";
+            return { state, Lexem{action.lexem, memory} };
+        }
         return { state, Lexem{action.lexem, memory } };
     }
     else if (keyword.contains(memory)) {

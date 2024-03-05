@@ -13,7 +13,7 @@ namespace lex_tests {
         string prog = R"(
 int main() {
     return 0;
-}
+}#
 )";
         vector<Lexem> correct = {
             { "kw", "int" },
@@ -59,7 +59,7 @@ int main() {
         }
     }
     return 0;
-}
+}#
 )";
         Lexem tokens[] = {
             // int fib(int n) {
@@ -220,14 +220,14 @@ int main() {
     TEST(TrickyCode, BasicProgram)
     {
         using namespace std;
-        string prog = "int main(){return 0;}";
+        string prog = "int main(){return 0;}#";
         vector<Lexem> correct = {
-            { "kwint", "" },
+            { "kw", "int" },
             { "id", "main" },
             { "lpar", "" },
             { "rpar", "" },
             { "lbrace", "" },
-            { "kwreturn", "" },
+            { "kw", "return" },
             { "num", "0" },
             { "semicolon", "" },
             { "rbrace", "" },
@@ -249,13 +249,13 @@ int main() {
 world
 '
 for everyone!!!
-")";
+"#)";
         string content = "Hello\n"
             "world\n"
             "'\n"
             "for everyone!!!\n";
         vector<Lexem> correct = {
-            { "kwout", "" },
+            { "kw", "out" },
             { "str", content },
             LEX_EOF
         };
@@ -271,7 +271,7 @@ for everyone!!!
     TEST(TrickyCode, Expressions)
     {
         using namespace std;
-        string prog = "int a=0;int aa=182;out aa+a==-123;";
+        string prog = "int a=0;int aa=182;out aa+a==-123;#";
         vector<Lexem> correct = {
             // int a=0;
             { "kw", "int" },
@@ -281,14 +281,14 @@ for everyone!!!
             { "semicolon", "" },
 
             // int aa=182;
-            { "kwint", "" },
+            { "kw", "int" },
             { "id", "aa" },
             { "opassign", "" },
             { "num", "182" },
             { "semicolon", "" },
 
             // out aa+a==-123;
-            { "kwout", "" },
+            { "kw", "out" },
             { "id", "aa" },
             { "opplus", "" },
             { "id", "a" },
@@ -309,9 +309,9 @@ for everyone!!!
     TEST(ErrorCode, BadString)
     {
         using namespace std;
-        string prog = R"(out "incomplete string;)";
+        string prog = R"(out "incomplete string;#)";
         vector<Lexem> correct = {
-            { "kwout", "" },
+            { "kw", "out" },
             LEX_ERROR,
         };
 
@@ -328,7 +328,7 @@ for everyone!!!
         using namespace std;
         string prog = R"(out '')";
         vector<Lexem> correct = {
-            { "kwout", "" },
+            { "kw", "out" },
             LEX_ERROR,
         };
 
@@ -343,9 +343,9 @@ for everyone!!!
     TEST(ErrorCode, DoubleChar)
     {
         using namespace std;
-        string prog = R"(out 'xy')";
+        string prog = R"(out 'xy'#)";
         vector<Lexem> correct = {
-            { "kwout", "" },
+            { "kw", "out" },
             LEX_ERROR,
         };
 
