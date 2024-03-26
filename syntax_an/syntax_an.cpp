@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <map>
+#include <deque>
 
 using namespace std;
 using Lexem = pair<string, string>;
@@ -22,6 +23,7 @@ int main()
             { "rbrace", "" },
             { "end", "" }
     };*/
+    string starting_symb = "E";
     map<string, Rule> grammar = {
         {"E'", {"E", {"E", "opplus", "E'"}}},
         {"E'", {"E", {"E'"}}},
@@ -46,13 +48,15 @@ int main()
     };
     map<int, vector<Rule>> rules;
     vector<string> stack;
-    for (int x =  0; x < int(expr.size()); x++) {
+    for (int x = 0; x < int(expr.size()); x++) {
         stack.push_back(expr[x].first);
         if (rules.empty()) {
-            for (int i = max_len; i >= 0; i--) {
-                for (auto& a : grammar_by_len[i]) {
-                    if (expr[x].first == a.first) {
-                        rules[i].push_back(a.second);
+            for (int j = int(stack.size()) - 1; j >= 0; j--) {
+                for (int i = max_len; i >= 0; i--) {
+                    for (auto& a : grammar_by_len[i]) {
+                        if (stack[j] == a.first && !(find(rules[i].begin(), rules[i].end(), a.second) != rules[i].end())) {
+                                rules[i].push_back(a.second);
+                        }
                     }
                 }
             }
@@ -60,7 +64,12 @@ int main()
         if (!rules.empty()){
             for (int i = max_len; i >= 0; i--) {
                 for (auto& a : rules[i]) {
+                    int size = a.second.size();
+                    if (size <= stack.size()) {
+                        for (int j = size - 1; ) {
 
+                        }
+                    }
                 }
             }
         }
