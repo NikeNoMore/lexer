@@ -8,6 +8,12 @@ using namespace std;
 using Lexem = pair<string, string>;
 using Rule = pair<string, vector<string>>;
 
+void pointer(map<string, Rule> &G) {
+    for (auto& x : G) {
+        x.second.second.
+    }
+}
+
 int main()
 {
     /*
