@@ -8,10 +8,38 @@ using namespace std;
 using Lexem = pair<string, string>;
 using Rule = pair<string, vector<string>>;
 
-void pointer(map<string, Rule> &G) {
+vector<Rule> pointer0(vector<Rule> &G) {
+    vector<Rule> pointed;
     for (auto& x : G) {
-        x.second.second.
+        for (int i = 0; i <= x.second.size(); i++) {
+            bool flag = false;
+            vector<string> temp;
+            for (int j = 0; j < x.second.size() + 1; j++) {
+                if (!flag) {
+                    if (i != j) {
+                        temp.push_back(x.second[j]);
+                    }
+                    else {
+                        temp.push_back(".");
+                        flag = true;
+                    }
+                }
+                else {
+                    temp.push_back(x.second[j - 1]);
+                }
+            }
+            pointed.push_back({ x.first, temp });
+        }
     }
+    return pointed;
+}
+
+vector<string> First(vector<>) {
+
+}
+
+vector<pair<string, Rule>> pointer1(vector<Rule> &p) {
+
 }
 
 int main()
@@ -30,17 +58,26 @@ int main()
             { "end", "" }
     };*/
     string starting_symb = "E";
-    map<string, Rule> grammar = {
-        {"E'", {"E", {"E", "opplus", "E'"}}},
-        {"E'", {"E", {"E'"}}},
-        {"id", {"E'", {"id"}}},
-        {"num", {"E'", {"num"}}}
+    vector<Rule> grammar = {
+        {"E", {"E", "opplus", "E'"}},
+        {"E", {"E'"}},
+        {"E'", {"id"}},
+        {"E'", {"num"}}
     };
+    vector<Rule> P = pointer0(grammar);
+    for (auto& x : P) {
+        cout << x.first << " -> ";
+        for (auto& y : x.second) {
+            cout << y << " ";
+        }
+        cout << endl;
+    }
     int max_len = 0;
+    /*
     map<int, vector<pair<string, Rule>>> grammar_by_len;
     int temp_size = grammar.size();
     for (auto& x : grammar) {
-        int temp = x.second.second.size();
+        int temp = x.second.size();
         if (temp > max_len) {
             max_len = temp;
         }
@@ -79,5 +116,5 @@ int main()
                 }
             }
         }
-    }
+    }*/
 }

@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\narogov1\Documents\lex_an--\x64\Debug\syntax_an.exe</FullPath>
+      <FullPath>C:\Users\narogov1\source\repos\lexer\x64\Debug\syntax_an.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
