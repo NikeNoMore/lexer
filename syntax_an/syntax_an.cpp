@@ -3,13 +3,96 @@
 #include <string>
 #include <map>
 #include <deque>
+#include <set>
 
 using namespace std;
 using Lexem = pair<string, string>;
 using Rule = pair<string, vector<string>>;
 
-vector<Rule> pointer0(vector<Rule> &G) {
-    vector<Rule> pointed;
+map<string, set<string>> FirstForG(vector<Rule>& G, vector<string>& t) {
+    map<string, set<string>> res;
+    for (auto& x : t) {
+        res[x] = { x };
+    }
+    bool flag = true;
+    while (flag) {
+        flag = false;
+        map<string, set<string>> temp = res;
+        for (auto& x : G) {
+            for (auto& y : x.second) {
+                if (y != "epsilon") {
+                    if (temp.contains(y)) {
+                        for (string z : temp[y]) {
+                            temp[x.first].insert(z);
+                        }
+                        if (find(temp[y].begin(), temp[y].end(), "epsilon") == temp[y].end()) {
+                            break;
+                        }
+                    }
+                    else {
+                        break;
+                    }
+                }
+            }
+        }
+        for (auto& x : temp) {
+            if (res.contains(x.first)) {
+                if (x.second != res[x.first]) {
+                    flag = true;
+                    res = temp;
+                    break;
+                }
+            }
+            else {
+                flag = true;
+                res = temp;
+                break;
+            }
+        }
+    }
+    return res;
+}
+
+vector<string> First(vector<string>& str, map<string, set<string>>& table) {
+    vector<string> res;
+    for (auto& x : str) {
+        bool flag = false;
+        for (auto& y : table[x]) {
+            if (y != "epsilon") {
+                res.push_back(y);
+            }
+            else {
+                flag = true;
+                if (y == *str.rbegin()) {
+                    res.push_back("epsilon");
+                }
+            }
+        }
+        if (!flag) {
+            return res;
+        }
+    }
+    return res;
+}
+
+vector<pair<Rule, string>> pointer(vector<Rule> &G, map<string, set<string>>& F, vector<string>& t) {
+    vector<pair<Rule, string>> pointed;
+    map<string, set<string>> first_;
+    for (auto& x : G) {
+        for (auto y = x.second.begin(); y != x.second.end(); ++y) {
+            if (find(t.begin(), t.end(), *y) == t.end()) {
+                auto temp = y;
+                vector<string> a;
+                for (temp; temp != x.second.end(); temp++) {
+                    a.push_back(*temp);
+                }
+                for (auto& z : First(a, F)) {
+                    first_[*y].insert(z);
+                }
+            }
+        }
+    }
+    vector<Rule> mid;
     for (auto& x : G) {
         for (int i = 0; i <= x.second.size(); i++) {
             bool flag = false;
@@ -28,18 +111,15 @@ vector<Rule> pointer0(vector<Rule> &G) {
                     temp.push_back(x.second[j - 1]);
                 }
             }
-            pointed.push_back({ x.first, temp });
+            mid.push_back({ x.first, temp });
+        }
+    }
+    for (auto& x : mid) {
+        for (auto& y : first_[x.first]) {
+            pointed.push_back({ x, y });
         }
     }
     return pointed;
-}
-
-vector<string> First(vector<>) {
-
-}
-
-vector<pair<string, Rule>> pointer1(vector<Rule> &p) {
-
 }
 
 int main()
@@ -57,19 +137,23 @@ int main()
             { "rbrace", "" },
             { "end", "" }
     };*/
-    string starting_symb = "E";
+    string starting_symb = "e";
+    vector<string> term = {"opplus", "id", "num"};
     vector<Rule> grammar = {
+        {"e", {"E", "#"}},
         {"E", {"E", "opplus", "E'"}},
         {"E", {"E'"}},
         {"E'", {"id"}},
         {"E'", {"num"}}
     };
-    vector<Rule> P = pointer0(grammar);
+    map<string, set<string>> F = FirstForG(grammar, term);
+    vector<pair<Rule, string>> P = pointer(grammar, F, term);
     for (auto& x : P) {
-        cout << x.first << " -> ";
-        for (auto& y : x.second) {
+        cout << x.first.first << " -> ";
+        for (auto& y : x.first.second) {
             cout << y << " ";
         }
+        cout << "| " << x.second;
         cout << endl;
     }
     int max_len = 0;
