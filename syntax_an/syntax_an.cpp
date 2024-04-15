@@ -75,51 +75,91 @@ vector<string> First(vector<string>& str, map<string, set<string>>& table) {
     return res;
 }
 
-vector<pair<Rule, string>> pointer(vector<Rule> &G, map<string, set<string>>& F, vector<string>& t) {
-    vector<pair<Rule, string>> pointed;
-    map<string, set<string>> first_;
-    for (auto& x : G) {
-        for (auto y = x.second.begin(); y != x.second.end(); ++y) {
-            if (find(t.begin(), t.end(), *y) == t.end()) {
-                auto temp = y;
-                vector<string> a;
-                for (temp; temp != x.second.end(); temp++) {
-                    a.push_back(*temp);
+set<pair<Rule, string>> Closure(vector<Rule> &G, map<string, set<string>>& F, vector<string>& t, set<pair<Rule, string>>& I) {
+    set<pair<Rule, string>> prev = I;
+    for (auto& x : I) {
+        int flag = 0;
+        vector<string> temp;
+        string non_term = "";
+        set<string> first_;
+        for (auto& y : x.first.second) {
+            if (flag == 0) {
+                if (y == ".") {
+                    flag = 1;
                 }
-                for (auto& z : First(a, F)) {
-                    first_[*y].insert(z);
+            }
+            else if(flag == 1) {
+                non_term = y;
+            }
+            else {
+                temp.push_back(y);
+            }
+        }
+        if (non_term != "") {
+            if (find(t.begin(), t.end(), non_term) == t.end()) {
+                temp.push_back(x.second);
+                for (auto& y : First(temp, F)) {
+                    first_.insert(y);
+                }
+                for (auto& g : G) {
+                    if (g.first == non_term) {
+                        vector<string> temp1 = { "." };
+                        for (auto& y : g.second) {
+                            temp1.push_back(y);
+                        }
+                        for (auto& y : first_) {
+                            I.insert({ {non_term, temp1}, y });
+                        }
+                    }
                 }
             }
         }
     }
-    vector<Rule> mid;
-    for (auto& x : G) {
-        for (int i = 0; i <= x.second.size(); i++) {
-            bool flag = false;
+    if (prev != I) {
+        return Closure(G, F, t, I);
+    }
+    else {
+        return I;
+    }
+}
+
+set<pair<Rule, string>> GoTo(set<pair<Rule, string>>& I, string& X) {
+    set<pair<Rule, string>> res;
+    for (auto& x : I) {
+        bool point = false;
+        bool flag = false;  
+        for (auto& y : x.first.second) {
+            if (!point) {
+                if (y == ".") {
+                    point = true;
+                }
+            }
+            else {
+                if (y == X) {
+                    flag = true;
+                }
+            }
+        }
+        if (flag) {
             vector<string> temp;
-            for (int j = 0; j < x.second.size() + 1; j++) {
-                if (!flag) {
-                    if (i != j) {
-                        temp.push_back(x.second[j]);
-                    }
-                    else {
-                        temp.push_back(".");
-                        flag = true;
-                    }
+            point = false;
+            for (auto& y : x.first.second) {
+                if (y != "." && !point) {
+                    temp.push_back(y);
                 }
-                else {
-                    temp.push_back(x.second[j - 1]);
+                else if (!point) {
+                    point = true;
+                }
+                else if (point) {
+                    temp.push_back(y);
+                    temp.push_back(".");
+                    point = false;
                 }
             }
-            mid.push_back({ x.first, temp });
+            res.insert({ {x.first.first, temp}, x.second });
         }
     }
-    for (auto& x : mid) {
-        for (auto& y : first_[x.first]) {
-            pointed.push_back({ x, y });
-        }
-    }
-    return pointed;
+    return res;
 }
 
 int main()
@@ -138,16 +178,17 @@ int main()
             { "end", "" }
     };*/
     string starting_symb = "e";
-    vector<string> term = {"opplus", "id", "num"};
+    vector<string> term = {"opplus", "id", "num", "#"};
     vector<Rule> grammar = {
-        {"e", {"E", "#"}},
+        {"e", {"E"}},
         {"E", {"E", "opplus", "E'"}},
         {"E", {"E'"}},
         {"E'", {"id"}},
         {"E'", {"num"}}
     };
     map<string, set<string>> F = FirstForG(grammar, term);
-    vector<pair<Rule, string>> P = pointer(grammar, F, term);
+    set<pair<Rule, string>> start = { { { "e", {".", "E"}}, "#"}};
+    set<pair<Rule, string>> P = Closure(grammar, F, term, start);
     for (auto& x : P) {
         cout << x.first.first << " -> ";
         for (auto& y : x.first.second) {
