@@ -124,7 +124,7 @@ set<pair<Rule, string>> Closure(vector<Rule> &G, map<string, set<string>>& F, ve
     }
 }
 
-set<pair<Rule, string>> GoTo(const set<pair<Rule, string>>& I, string& X) {
+set<pair<Rule, string>> GoTo(const set<pair<Rule, string>>& I, string& X, vector<Rule>& G, map<string, set<string>>& F, vector<string>& t) {
     set<pair<Rule, string>> res;
     for (auto& x : I) {
         bool point = false;
@@ -160,25 +160,82 @@ set<pair<Rule, string>> GoTo(const set<pair<Rule, string>>& I, string& X) {
             res.insert({ {x.first.first, temp}, x.second });
         }
     }
-    return res;
+    return Closure(G, F, t, res);
 }
 
-set<set<pair<Rule, string>>> items(set<set<pair<Rule, string>>>& I, vector<Rule>& G, map<string, set<string>>& F, vector<string>& alph){
+set<set<pair<Rule, string>>> items(set<set<pair<Rule, string>>>& I, vector<Rule>& G, map<string, set<string>>& F, vector<string>& alph, vector<string>& t){
     set<set<pair<Rule, string>>> C = I;
     set<set<pair<Rule, string>>> prev = C;
     for (auto& x : C) {
         for (auto& y : alph) {
-            set<pair<Rule, string>> temp = GoTo(x, y);
+            set<pair<Rule, string>> temp = GoTo(x, y, G, F, t);
             if (!temp.empty()) {
                 C.insert(temp);
             }
         }
     }
     if (C != prev) {
-        return items(C, G, F, alph);
+        return items(C, G, F, alph, t);
     }
     else {
         return C;
+    }
+}
+
+void tick(vector<int>& state, vector<string>& stack, vector<string>& alphabet, vector<vector<pair<string, pair<int, Rule>>>>& E) {
+    int huh = *state.rbegin();
+    auto it1 = find(alphabet.begin(), alphabet.end(), *stack.rbegin());
+    int term_id = int(distance(alphabet.begin(), it1));
+    auto heh = E[huh][term_id];
+    if (heh.second.first == -1) {
+        cout << "FALSE";
+        return;
+    }
+    if (heh.first == "acc") {
+        cout << "TRUE";
+        stack.pop_back();
+        stack.pop_back();
+        return;
+    }
+    if (heh.second.first != -2) {
+        state.push_back(heh.second.first);
+    }
+    if (heh.first == "r") {
+        auto it1 = heh.second.second.second.rbegin();
+        it1++;
+        auto it2 = stack.begin();
+        while (*it1 != *it2) {
+            it2++;
+        }
+        auto it3 = stack.rbegin();
+        while (*it3 != *it2) {
+            it3++;
+        }
+        int counter = 0;
+        for (it1; it1 != heh.second.second.second.rend(); it1++) {
+            if (*it3 == *it1) {
+                counter += 1;
+                cout << *it3 << " ";
+                it3 = decltype(it3)(stack.erase(next(it3).base()));
+                /*advance(it3, 1);
+                stack.erase(it3.base());*/
+            }
+            else {
+                cout << "ERROR, STUPID";
+                return;
+            }
+        }
+        if (heh.second.first != -2) {
+            state.push_back(heh.second.first);
+        }
+        for (counter; counter > 0; counter--) {
+            state.pop_back();
+        }
+        stack.pop_back();
+        stack.push_back(heh.second.second.first);
+        tick(state, stack, alphabet, E);
+        stack.push_back(alphabet[term_id]);
+        tick(state, stack, alphabet, E);
     }
 }
 
@@ -199,6 +256,7 @@ int main()
     };*/
     string starting_symb = "e";
     vector<string> term = {"opplus", "id", "num", "#"};
+    vector<string> non_term = { "e", "E", "E'" };
     vector<string> alphabet = { "opplus", "id", "num", "#", "e", "E", "E'"};
     vector<Rule> grammar = {
         {"e", {"E"}},
@@ -211,7 +269,7 @@ int main()
     set<pair<Rule, string>> start = { { { "e", {".", "E"}}, "#"}};
     set<set<pair<Rule, string>>> I;
     I.insert(Closure(grammar, F, term, start));
-    set<set<pair<Rule, string>>> C = items(I, grammar, F, alphabet);
+    set<set<pair<Rule, string>>> C = items(I, grammar, F, alphabet, term);
     vector<set<pair<Rule, string>>> e;
     int counter = 0;
     for (auto& x : C) {
@@ -230,11 +288,11 @@ int main()
     }
     int am_i = int(e.size());
     int len_alph = int(alphabet.size());
-    vector<vector<string>> E;
+    vector<vector<pair<string, pair<int, Rule>>>> E;
     for (int i = 0; i < am_i; i++) {
         E.push_back({});
         for (int j = 0; j < len_alph; j++) {
-            E[i].push_back("-");
+            E[i].push_back({ "", { -1, {}} });
         }
     }
 
@@ -254,14 +312,59 @@ int main()
             }
             if (flag == 2) {
                 if (find(term.begin(), term.end(), t) != term.end()) {
-                    auto it = find(e.begin(), e.end(), GoTo(e[i], t));
+                    auto it = find(e.begin(), e.end(), GoTo(e[i], t, grammar, F, term));
                     int id = int(distance(e.begin(), it));
-                    auto it = find(alphabet.begin(), alphabet.end(), t);
-                    int term_id;
-                    E[i][term_id] = "s" + to_string(id);
+                    auto it1 = find(alphabet.begin(), alphabet.end(), t);
+                    int term_id = int(distance(alphabet.begin(), it1));
+                    E[i][term_id] = { "s", {id, {}} };
+                }
+            }
+            else {
+                if (x.first.first != starting_symb) {
+                    auto it1 = find(alphabet.begin(), alphabet.end(), x.second);
+                    int term_id = int(distance(alphabet.begin(), it1));
+                    E[i][term_id] = { "r", { -2, x.first} };
+                }
+                else {
+                    auto it1 = find(alphabet.begin(), alphabet.end(), x.second);
+                    int term_id = int(distance(alphabet.begin(), it1));
+                    E[i][term_id] = { "acc", { -2, {}} };
                 }
             }
         }
+        for (auto& y : non_term) {
+            auto temp = GoTo(e[i], y, grammar, F, term);
+            if (!temp.empty()){
+                auto it = find(e.begin(), e.end(), temp);
+                int id = int(distance(e.begin(), it));
+                auto it1 = find(alphabet.begin(), alphabet.end(), y);
+                int term_id = int(distance(alphabet.begin(), it1));
+                E[i][term_id] = { "", {id, {}} };
+            }
+        }
+    }
+    vector<Lexem> expr = {
+        {"num", "1"},
+        {"#", ""}
+    };
+    for (int i = 0; i < am_i; i++) {
+        for (int j = 0; j < len_alph; j++) {
+            cout << E[i][j].first << E[i][j].second.first << " ";
+        }
+        cout << endl;
+    }
+    vector<int> state = {0};
+    vector<string> stack;
+    auto it = expr.begin();
+    stack.push_back((*it).first);
+    it = expr.erase(it);
+    tick(state, stack, alphabet, E);
+    while (!stack.empty()) {
+        if (!expr.empty()) {
+            stack.push_back((*it).first);
+            it = expr.erase(it);
+        }
+        tick(state, stack, alphabet, E);
     }
     /*int max_len = 0;
     string f = "E";
@@ -285,11 +388,6 @@ int main()
         auto &a =  x;
         grammar_by_len[temp].push_back(a);
     }
-    vector<Lexem> expr = {
-        {"num", "1"},
-        {"opplus", ""},
-        {"num", "2"}
-    };
     map<int, vector<Rule>> rules;
     vector<string> stack;
     for (int x = 0; x < int(expr.size()); x++) {
