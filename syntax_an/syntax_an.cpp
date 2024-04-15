@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <string>
 #include <map>
@@ -90,6 +90,7 @@ set<pair<Rule, string>> Closure(vector<Rule> &G, map<string, set<string>>& F, ve
             }
             else if(flag == 1) {
                 non_term = y;
+                flag = 2;
             }
             else {
                 temp.push_back(y);
@@ -123,7 +124,7 @@ set<pair<Rule, string>> Closure(vector<Rule> &G, map<string, set<string>>& F, ve
     }
 }
 
-set<pair<Rule, string>> GoTo(set<pair<Rule, string>>& I, string& X) {
+set<pair<Rule, string>> GoTo(const set<pair<Rule, string>>& I, string& X) {
     set<pair<Rule, string>> res;
     for (auto& x : I) {
         bool point = false;
@@ -162,6 +163,25 @@ set<pair<Rule, string>> GoTo(set<pair<Rule, string>>& I, string& X) {
     return res;
 }
 
+set<set<pair<Rule, string>>> items(set<set<pair<Rule, string>>>& I, vector<Rule>& G, map<string, set<string>>& F, vector<string>& alph){
+    set<set<pair<Rule, string>>> C = I;
+    set<set<pair<Rule, string>>> prev = C;
+    for (auto& x : C) {
+        for (auto& y : alph) {
+            set<pair<Rule, string>> temp = GoTo(x, y);
+            if (!temp.empty()) {
+                C.insert(temp);
+            }
+        }
+    }
+    if (C != prev) {
+        return items(C, G, F, alph);
+    }
+    else {
+        return C;
+    }
+}
+
 int main()
 {
     /*
@@ -179,6 +199,7 @@ int main()
     };*/
     string starting_symb = "e";
     vector<string> term = {"opplus", "id", "num", "#"};
+    vector<string> alphabet = { "opplus", "id", "num", "#", "e", "E", "E'"};
     vector<Rule> grammar = {
         {"e", {"E"}},
         {"E", {"E", "opplus", "E'"}},
@@ -188,16 +209,71 @@ int main()
     };
     map<string, set<string>> F = FirstForG(grammar, term);
     set<pair<Rule, string>> start = { { { "e", {".", "E"}}, "#"}};
-    set<pair<Rule, string>> P = Closure(grammar, F, term, start);
-    for (auto& x : P) {
+    set<set<pair<Rule, string>>> I;
+    I.insert(Closure(grammar, F, term, start));
+    set<set<pair<Rule, string>>> C = items(I, grammar, F, alphabet);
+    vector<set<pair<Rule, string>>> e;
+    int counter = 0;
+    for (auto& x : C) {
+        e.push_back(x);
+        cout << counter << endl;
+        counter += 1;
+        for (auto& z : x) {
+            cout << z.first.first << " -> ";
+            for (auto& y : z.first.second) {
+                cout << y << " ";
+            }
+            cout << "| " << z.second;
+            cout << endl;
+        }
+        cout << "================" << endl;
+    }
+    int am_i = int(e.size());
+    int len_alph = int(alphabet.size());
+    vector<vector<string>> E;
+    for (int i = 0; i < am_i; i++) {
+        E.push_back({});
+        for (int j = 0; j < len_alph; j++) {
+            E[i].push_back("-");
+        }
+    }
+
+    for (int i = 0; i < am_i; i++) {
+        for (auto& x : e[i]) {
+            int flag = 0;
+            string t;
+            for (auto& y : x.first.second) {
+                if (flag == 0 && y == ".") {
+                    flag = 1;
+                }
+                else if (flag == 1) {
+                    t = y;
+                    flag = 2;
+                    break;
+                }
+            }
+            if (flag == 2) {
+                if (find(term.begin(), term.end(), t) != term.end()) {
+                    auto it = find(e.begin(), e.end(), GoTo(e[i], t));
+                    int id = int(distance(e.begin(), it));
+                    auto it = find(alphabet.begin(), alphabet.end(), t);
+                    int term_id;
+                    E[i][term_id] = "s" + to_string(id);
+                }
+            }
+        }
+    }
+    /*int max_len = 0;
+    string f = "E";
+    set<pair<Rule, string>> R = GoTo(P, f);
+    for (auto& x : R) {
         cout << x.first.first << " -> ";
         for (auto& y : x.first.second) {
             cout << y << " ";
         }
         cout << "| " << x.second;
         cout << endl;
-    }
-    int max_len = 0;
+    }*/
     /*
     map<int, vector<pair<string, Rule>>> grammar_by_len;
     int temp_size = grammar.size();
