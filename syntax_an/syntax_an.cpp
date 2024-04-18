@@ -265,7 +265,7 @@ void tick(Lexem symb,vector<int>& state, vector<pair<string, int>>& stack, vecto
     }
 }
 
-void tree_print(pair<string, int>& node, map<pair<string, int>, vector<pair<string, int>>>& tree, vector<bool>& son) {
+void tree_print(vector<pair<string, int>>& node, map<pair<string, int>, vector<pair<string, int>>>& tree, vector<bool>& son, vector<string>& t) {
     int end = int(son.size());
     for (int i = 0; i < end; i++) {
         if (i != end - 1) {
@@ -285,17 +285,50 @@ void tree_print(pair<string, int>& node, map<pair<string, int>, vector<pair<stri
             }
         }
     }
-    cout << node.first << endl;
-    end = int(tree[node].size());
+    int a = 0;
+    for (a; a < int(node.size()); a++) {
+        cout << node[a].first << " ";
+    }
+    a--;
+    end = int(tree[node[a]].size());
+    bool flag = false;
+    if (find(t.begin(), t.end(), node[a].first) == t.end()) {
+        flag = true;
+    }
     for (int i = 0; i < end; i++) {
-        if (i != end - 1) {
-            son.push_back(true);
+        if (!flag) {
+            if (find(t.begin(), t.end(), tree[node[a]][i].first) != t.end()) {
+                cout << " " << tree[node[a]][i].first;
+            }
+            else {
+                cout << " " << tree[node[a]][i].first;
+                flag = true;
+            }
         }
-        else {
-            son.push_back(false);
+        if(flag) {
+            vector<pair<string, int>> temp;
+            temp.push_back(tree[node[a]][i]);
+            if (find(t.begin(), t.end(), tree[node[a]][i].first) != t.end()) {
+                while (find(t.begin(), t.end(), tree[node[a]][i].first) != t.end()) {
+                    if (tree[node[a]][i] != *tree[node[a]].rbegin()) {
+                        i++;
+                        temp.push_back(tree[node[a]][i]);
+                    }
+                    else {
+                        break;
+                    }
+                }
+            }
+            if (i != end - 1) {
+                son.push_back(true);
+            }
+            else {
+                son.push_back(false);
+            }
+            cout << endl;
+            tree_print(temp, tree, son, t);
+            son.pop_back();
         }
-        tree_print(tree[node][i], tree, son);
-        son.pop_back();
     }
 }
 
@@ -434,6 +467,6 @@ int main()
         cout << endl;
     }
     vector<bool> son;
-    pair<string, int> start_node = { starting_symb, -1 };
-    tree_print(start_node, tree, son);
+    vector<pair<string, int>> start_node = { { starting_symb, -1 } };
+    tree_print(start_node, tree, son, term);
 }
