@@ -2,12 +2,23 @@
 #include <vector>
 #include <string>
 #include <map>
-#include <deque>
 #include <set>
 
 using namespace std;
 using Lexem = pair<string, string>;
 using Rule = pair<string, vector<string>>;
+map<string, int> num_nodes;
+string starting_symb = "e";
+
+pair<string, int> numerate(string& str) {
+    if (num_nodes.contains(str)) {
+        num_nodes[str]++;
+    }
+    else {
+        num_nodes[str] = 0;
+    }
+    return { str, num_nodes[str] };
+}
 
 map<string, set<string>> FirstForG(vector<Rule>& G, vector<string>& t) {
     map<string, set<string>> res;
@@ -182,18 +193,25 @@ set<set<pair<Rule, string>>> items(set<set<pair<Rule, string>>>& I, vector<Rule>
     }
 }
 
-void tick(vector<int>& state, vector<string>& stack, vector<string>& alphabet, vector<vector<pair<string, pair<int, Rule>>>>& E) {
+void tick(Lexem symb,vector<int>& state, vector<pair<string, int>>& stack, vector<string>& alphabet, vector<vector<pair<string, pair<int, Rule>>>>& E, map<pair<string, int>, vector<pair<string, int>>>& tree) {
     int huh = *state.rbegin();
-    auto it1 = find(alphabet.begin(), alphabet.end(), *stack.rbegin());
-    int term_id = int(distance(alphabet.begin(), it1));
+    int term_id;
+    if (symb.first.empty()) {
+        auto it1 = find(alphabet.begin(), alphabet.end(), (*stack.rbegin()).first);
+        term_id = int(distance(alphabet.begin(), it1));
+    }
+    else {
+        auto it1 = find(alphabet.begin(), alphabet.end(), symb.first);
+        term_id = int(distance(alphabet.begin(), it1));
+    }
     auto heh = E[huh][term_id];
     if (heh.second.first == -1) {
         cout << "FALSE";
         return;
     }
     if (heh.first == "acc") {
+        tree[{starting_symb, -1}].push_back(*stack.rbegin());
         cout << "TRUE";
-        stack.pop_back();
         stack.pop_back();
         return;
     }
@@ -204,18 +222,19 @@ void tick(vector<int>& state, vector<string>& stack, vector<string>& alphabet, v
         auto it1 = heh.second.second.second.rbegin();
         it1++;
         auto it2 = stack.begin();
-        while (*it1 != *it2) {
+        while (*it1 != (*it2).first) {
             it2++;
         }
         auto it3 = stack.rbegin();
-        while (*it3 != *it2) {
+        while ((*it3).first != (*it2).first) {
             it3++;
         }
         int counter = 0;
+        vector<pair<string, int>> temp_;
         for (it1; it1 != heh.second.second.second.rend(); it1++) {
-            if (*it3 == *it1) {
+            if ((*it3).first == *it1) {
                 counter += 1;
-                cout << *it3 << " ";
+                temp_.push_back(*it3);
                 it3 = decltype(it3)(stack.erase(next(it3).base()));
                 /*advance(it3, 1);
                 stack.erase(it3.base());*/
@@ -231,11 +250,52 @@ void tick(vector<int>& state, vector<string>& stack, vector<string>& alphabet, v
         for (counter; counter > 0; counter--) {
             state.pop_back();
         }
-        stack.pop_back();
-        stack.push_back(heh.second.second.first);
-        tick(state, stack, alphabet, E);
-        stack.push_back(alphabet[term_id]);
-        tick(state, stack, alphabet, E);
+        if (symb.first == "") {
+            stack.pop_back();
+        }
+        stack.push_back(numerate(heh.second.second.first));
+        for (auto& y : temp_) {
+            tree[*stack.rbegin()].push_back(y);
+        }
+        tick({ "", ""}, state, stack, alphabet, E, tree);
+        tick({ alphabet[term_id], ""}, state, stack, alphabet, E, tree);
+    }
+    else if (heh.first == "s") {
+        stack.push_back(numerate(alphabet[term_id]));
+    }
+}
+
+void tree_print(pair<string, int>& node, map<pair<string, int>, vector<pair<string, int>>>& tree, vector<bool>& son) {
+    int end = int(son.size());
+    for (int i = 0; i < end; i++) {
+        if (i != end - 1) {
+            if (!son[i]) {
+                cout << "  ";
+            }
+            else {
+                cout << "| ";
+            }
+        }
+        else {
+            if (!son[i]) {
+                cout << "|_";
+            }
+            else {
+                cout << "|-";
+            }
+        }
+    }
+    cout << node.first << endl;
+    end = int(tree[node].size());
+    for (int i = 0; i < end; i++) {
+        if (i != end - 1) {
+            son.push_back(true);
+        }
+        else {
+            son.push_back(false);
+        }
+        tree_print(tree[node][i], tree, son);
+        son.pop_back();
     }
 }
 
@@ -254,7 +314,6 @@ int main()
             { "rbrace", "" },
             { "end", "" }
     };*/
-    string starting_symb = "e";
     vector<string> term = {"opplus", "id", "num", "#"};
     vector<string> non_term = { "e", "E", "E'" };
     vector<string> alphabet = { "opplus", "id", "num", "#", "e", "E", "E'"};
@@ -274,7 +333,7 @@ int main()
     int counter = 0;
     for (auto& x : C) {
         e.push_back(x);
-        cout << counter << endl;
+        /*cout << counter << endl;
         counter += 1;
         for (auto& z : x) {
             cout << z.first.first << " -> ";
@@ -284,7 +343,7 @@ int main()
             cout << "| " << z.second;
             cout << endl;
         }
-        cout << "================" << endl;
+        cout << "================" << endl;*/
     }
     int am_i = int(e.size());
     int len_alph = int(alphabet.size());
@@ -345,75 +404,36 @@ int main()
     }
     vector<Lexem> expr = {
         {"num", "1"},
+        {"opplus", ""},
+        {"num", "2"},
+        {"opplus", ""},
+        {"id", "a"},
         {"#", ""}
     };
-    for (int i = 0; i < am_i; i++) {
-        for (int j = 0; j < len_alph; j++) {
-            cout << E[i][j].first << E[i][j].second.first << " ";
-        }
-        cout << endl;
-    }
+    map<pair<string, int>, vector<pair<string, int>>> tree;
     vector<int> state = {0};
-    vector<string> stack;
+    vector<pair<string, int>> stack;
     auto it = expr.begin();
-    stack.push_back((*it).first);
+    tick(*it, state, stack, alphabet, E, tree);
     it = expr.erase(it);
-    tick(state, stack, alphabet, E);
     while (!stack.empty()) {
         if (!expr.empty()) {
-            stack.push_back((*it).first);
+            tick(*it, state, stack, alphabet, E, tree);
             it = expr.erase(it);
         }
-        tick(state, stack, alphabet, E);
-    }
-    /*int max_len = 0;
-    string f = "E";
-    set<pair<Rule, string>> R = GoTo(P, f);
-    for (auto& x : R) {
-        cout << x.first.first << " -> ";
-        for (auto& y : x.first.second) {
-            cout << y << " ";
+        else {
+            tick({ "", "" }, state, stack, alphabet, E, tree);
         }
-        cout << "| " << x.second;
+    }
+    cout << endl;
+    for (auto& x : tree) {
+        cout << x.first.first << x.first.second << "->";
+        for (auto& y : x.second) {
+            cout << y.first << y.second << " ";
+        }
         cout << endl;
-    }*/
-    /*
-    map<int, vector<pair<string, Rule>>> grammar_by_len;
-    int temp_size = grammar.size();
-    for (auto& x : grammar) {
-        int temp = x.second.size();
-        if (temp > max_len) {
-            max_len = temp;
-        }
-        auto &a =  x;
-        grammar_by_len[temp].push_back(a);
     }
-    map<int, vector<Rule>> rules;
-    vector<string> stack;
-    for (int x = 0; x < int(expr.size()); x++) {
-        stack.push_back(expr[x].first);
-        if (rules.empty()) {
-            for (int j = int(stack.size()) - 1; j >= 0; j--) {
-                for (int i = max_len; i >= 0; i--) {
-                    for (auto& a : grammar_by_len[i]) {
-                        if (stack[j] == a.first && !(find(rules[i].begin(), rules[i].end(), a.second) != rules[i].end())) {
-                                rules[i].push_back(a.second);
-                        }
-                    }
-                }
-            }
-        }
-        if (!rules.empty()){
-            for (int i = max_len; i >= 0; i--) {
-                for (auto& a : rules[i]) {
-                    int size = a.second.size();
-                    if (size <= stack.size()) {
-                        for (int j = size - 1; ) {
-
-                        }
-                    }
-                }
-            }
-        }
-    }*/
+    vector<bool> son;
+    pair<string, int> start_node = { starting_symb, -1 };
+    tree_print(start_node, tree, son);
 }
