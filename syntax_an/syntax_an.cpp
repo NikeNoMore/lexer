@@ -1,8 +1,10 @@
 #include <iostream>
+#include "../stat_lib/lexer_frm.h"
 #include <vector>
 #include <string>
 #include <map>
 #include <set>
+#include <fstream>
 
 using namespace std;
 using Lexem = pair<string, string>;
@@ -204,6 +206,9 @@ void tick(Lexem symb, vector<int>& state, vector<pair<Lexem, int>>& stack, vecto
     auto heh = E[huh][term_id];
     if (heh.second.first == -1) {
         cout << "FALSE";
+        while (!stack.empty()) {
+            stack.pop_back();
+        }
         return;
     }
     if (heh.first == "acc") {
@@ -352,9 +357,9 @@ int main()
             { "rbrace", "" },
             { "end", "" }
     };*/
-    vector<string> term = {"opplus", "id", "num", "#"};
+    vector<string> term = {"opplus", "id", "num", "end"};
     vector<string> non_term = { "e", "E", "E'" };
-    vector<string> alphabet = { "opplus", "id", "num", "#", "e", "E", "E'"};
+    vector<string> alphabet = { "opplus", "id", "num", "end", "e", "E", "E'"};
     vector<Rule> grammar = {
         {"e", {"E"}},
         {"E", {"E", "opplus", "E'"}},
@@ -363,7 +368,7 @@ int main()
         {"E'", {"num"}}
     };
     map<string, set<string>> F = FirstForG(grammar, term);
-    set<pair<Rule, string>> start = { { { "e", {".", "E"}}, "#"}};
+    set<pair<Rule, string>> start = { { { "e", {".", "E"}}, "end"}};
     set<set<pair<Rule, string>>> I;
     I.insert(Closure(grammar, F, term, start));
     set<set<pair<Rule, string>>> C = items(I, grammar, F, alphabet, term);
@@ -371,17 +376,6 @@ int main()
     int counter = 0;
     for (auto& x : C) {
         e.push_back(x);
-        /*cout << counter << endl;
-        counter += 1;
-        for (auto& z : x) {
-            cout << z.first.first << " -> ";
-            for (auto& y : z.first.second) {
-                cout << y << " ";
-            }
-            cout << "| " << z.second;
-            cout << endl;
-        }
-        cout << "================" << endl;*/
     }
     int am_i = int(e.size());
     int len_alph = int(alphabet.size());
@@ -440,37 +434,33 @@ int main()
             }
         }
     }
-    vector<Lexem> expr = {
-        {"num", "1"},
-        {"opplus", ""},
-        {"num", "2"},
-        {"opplus", ""},
-        {"id", "a"},
-        {"#", ""}
-    };
+    filebuf fb;
     map<pair<Lexem, int>, vector<pair<Lexem, int>>> tree;
-    vector<int> state = {0};
+    vector<int> state = { 0 };
     vector<pair<Lexem, int>> stack;
-    auto it = expr.begin();
-    tick(*it, state, stack, alphabet, E, tree);
-    it = expr.erase(it);
+    if (fb.open("test.txt", ios::in)) {
+        istream is(&fb);
+        Lexer lex(is);
+        while (is) {
+            Lexem l = lex.getNextLexem();
+            tick(l, state, stack, alphabet, E, tree);
+            if (l == LEX_EOF) {
+                break;
+            }
+        }
+        fb.close();
+    }
     while (!stack.empty()) {
-        if (!expr.empty()) {
-            tick(*it, state, stack, alphabet, E, tree);
-            it = expr.erase(it);
-        }
-        else {
-            tick({ "", "" }, state, stack, alphabet, E, tree);
-        }
+        tick({ "", "" }, state, stack, alphabet, E, tree);
     }
     cout << endl;
-    for (auto& x : tree) {
+    /*for (auto& x : tree) {
         cout << x.first.first.first << x.first.second << "->";
         for (auto& y : x.second) {
             cout << y.first.first << y.first.second << y.second << " ";
         }
         cout << endl;
-    }
+    }*/
     vector<bool> son;
     vector<pair<Lexem, int>> start_node = { { {starting_symb, ""}, -1}};
     tree_print(start_node, tree, son, term);
