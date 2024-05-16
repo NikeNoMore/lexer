@@ -1,0 +1,531 @@
+e E E7 E6 E5 E4 E3 E2 E1 ArgList ArgList' 
+comma epsilon rpar lpar opinc opnot opmul opminus ople opgt oplt opne opeq opand opor opplus id num end 
+-1 177 237 511 505 443 395 385 247 124 176 r-2(-2 - lpar E rpar .) -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 r-2(-2 - lpar E rpar .) -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 r-2(-2 - lpar E rpar .) -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 -1 -1 s0 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 r-2(-2 - lpar E rpar .) -1 s1 s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 r-2(-2 - lpar E rpar .) -1 s1 s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 r-2(-2 - lpar E rpar .) -1 s1 s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 -1 -1 s1 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 -1 -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 r-2(-2 - id lpar ArgList rpar .) 
+-1 177 237 511 505 443 395 385 247 124 176 -1 -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 r-2(-2 - id lpar ArgList rpar .) 
+-1 177 237 511 505 443 395 385 247 124 176 -1 -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 -1 -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 -1 -1 s2 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 124 176 -1 -1 r-2(-2 - epsilon .) s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 r-2(-2 - id lpar ArgList rpar .) -1 s4 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 r-2(-2 - id lpar ArgList rpar .) -1 s4 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 -1 -1 s4 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 -1 -1 s4 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 r-2(-2 - id lpar ArgList rpar .) -1 s5 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 r-2(-2 - id lpar ArgList rpar .) -1 s5 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 -1 -1 s5 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 -1 -1 s5 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 r-2(-2 - id lpar ArgList rpar .) -1 s6 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 r-2(-2 - id lpar ArgList rpar .) -1 s6 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 r-2(-2 - id lpar ArgList rpar .) -1 s6 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 r-2(-2 - id lpar ArgList rpar .) -1 s6 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 -1 -1 s6 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 r-2(-2 - id lpar ArgList rpar .) 
+-1 177 237 511 505 443 395 385 247 125 176 -1 -1 s6 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 r-2(-2 - id lpar ArgList rpar .) 
+-1 177 237 511 505 443 395 385 247 125 176 -1 -1 s6 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 -1 -1 s6 s17 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 -1 -1 s6 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 125 176 -1 -1 r-2(-2 - epsilon .) s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 r-2(-2 - lpar E rpar .) -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 s8 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 r-2(-2 - lpar E rpar .) -1 s9 s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 s9 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 r-2(-2 - lpar E rpar .) -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) -1 -1 -1 -1 -1 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 s10 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 r-2(-2 - lpar E rpar .) -1 s11 s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) -1 -1 -1 -1 -1 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 s11 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 s12 s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 r-2(-2 - lpar E rpar .) 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 s12 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 s13 s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) -1 -1 -1 -1 -1 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 r-2(-2 - lpar E rpar .) 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 s13 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 s14 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 r-2(-2 - lpar E rpar .) s17 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) -1 -1 -1 -1 -1 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 s15 s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 177 237 511 505 443 395 385 247 126 176 -1 -1 r-2(-2 - epsilon .) s17 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 r-2(-2 - id lpar ArgList rpar .) -1 s18 s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 -1 -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 r-2(-2 - id lpar ArgList rpar .) -1 s19 s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 -1 -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 r-2(-2 - id lpar ArgList rpar .) -1 s20 s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 r-2(-2 - id lpar ArgList rpar .) -1 s20 s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 -1 -1 s20 s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 r-2(-2 - id lpar ArgList rpar .) 
+-1 178 237 511 505 443 395 385 247 127 176 -1 -1 s20 s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 r-2(-2 - id lpar ArgList rpar .) 
+-1 178 237 511 505 443 395 385 247 127 176 -1 -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 -1 -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 127 176 -1 -1 r-2(-2 - epsilon .) s35 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 r-2(-2 - id lpar ArgList rpar .) -1 s22 s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 -1 -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 r-2(-2 - id lpar ArgList rpar .) -1 s23 s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 -1 -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 r-2(-2 - id lpar ArgList rpar .) -1 s24 s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 r-2(-2 - id lpar ArgList rpar .) -1 s24 s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 -1 -1 s24 s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 r-2(-2 - id lpar ArgList rpar .) 
+-1 178 237 511 505 443 395 385 247 128 176 -1 -1 s24 s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 r-2(-2 - id lpar ArgList rpar .) 
+-1 178 237 511 505 443 395 385 247 128 176 -1 -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 -1 -1 r-2(-2 - id lpar ArgList rpar .) s35 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 128 176 -1 -1 r-2(-2 - epsilon .) s35 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 129 176 -1 -1 s26 s35 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 129 176 -1 -1 s27 s35 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 129 176 -1 -1 s28 s35 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 129 176 -1 -1 s29 s35 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 129 176 -1 -1 s30 s35 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 129 176 -1 -1 s31 s35 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 129 176 -1 -1 s32 s35 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 129 176 -1 -1 s33 s35 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 178 237 511 505 443 395 385 247 129 176 -1 -1 r-2(-2 - epsilon .) s35 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 130 176 -1 -1 s36 s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 130 176 -1 -1 r-2(-2 - epsilon .) s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 131 176 r-2(-2 - id lpar ArgList rpar .) -1 s38 s52 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 131 176 r-2(-2 - id lpar ArgList rpar .) -1 s38 s52 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 131 176 r-2(-2 - id lpar ArgList rpar .) -1 s38 s52 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 131 176 r-2(-2 - id lpar ArgList rpar .) -1 s38 s52 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 131 176 -1 -1 s38 s52 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 r-2(-2 - id lpar ArgList rpar .) 
+-1 179 237 511 505 443 395 385 247 131 176 -1 -1 s38 s52 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 r-2(-2 - id lpar ArgList rpar .) 
+-1 179 237 511 505 443 395 385 247 131 176 -1 -1 s38 s52 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 131 176 -1 -1 s38 s52 s345 s248 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 131 176 -1 -1 s38 s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 131 176 -1 -1 r-2(-2 - epsilon .) s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 132 176 -1 -1 s40 s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 132 176 -1 -1 r-2(-2 - epsilon .) s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 133 176 -1 -1 s42 s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 133 176 -1 -1 r-2(-2 - epsilon .) s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 134 176 -1 -1 s44 s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 134 176 -1 -1 r-2(-2 - epsilon .) s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 135 176 -1 -1 s46 s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 135 176 -1 -1 r-2(-2 - epsilon .) s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 136 176 r-2(-2 - lpar E rpar .) -1 r-2(-2 - lpar E rpar .) s52 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 136 176 r-2(-2 - lpar E rpar .) -1 s48 s52 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 136 176 r-2(-2 - lpar E rpar .) -1 r-2(-2 - lpar E rpar .) s52 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) -1 -1 -1 -1 -1 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 136 176 r-2(-2 - lpar E rpar .) -1 s48 s52 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) -1 -1 -1 -1 -1 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 136 176 -1 -1 s48 s52 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 r-2(-2 - lpar E rpar .) 
+-1 179 237 511 505 443 395 385 247 136 176 -1 -1 s48 s52 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) -1 -1 -1 -1 -1 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 r-2(-2 - lpar E rpar .) 
+-1 179 237 511 505 443 395 385 247 136 176 -1 -1 r-2(-2 - lpar E rpar .) s52 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 136 176 -1 -1 r-2(-2 - lpar E rpar .) s52 s345 s248 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) -1 -1 -1 -1 -1 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 136 176 -1 -1 s48 s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 136 176 -1 -1 r-2(-2 - epsilon .) s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 137 176 -1 -1 s50 s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 179 237 511 505 443 395 385 247 137 176 -1 -1 r-2(-2 - epsilon .) s52 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 180 238 513 506 444 399 386 255 138 176 -1 -1 s53 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 138 176 -1 -1 s54 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 138 176 -1 -1 s55 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 139 176 -1 -1 s56 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 139 176 -1 -1 s57 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 139 176 -1 -1 s58 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 140 176 -1 -1 s59 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 140 176 -1 -1 s60 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 140 176 -1 -1 s61 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 140 176 -1 -1 s62 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 140 176 -1 -1 s63 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 140 176 -1 -1 s64 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 140 176 -1 -1 s65 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 140 176 -1 -1 s66 s67 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 141 176 -1 -1 s68 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 141 176 -1 -1 s69 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 141 176 -1 -1 s70 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 142 176 -1 -1 s71 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 142 176 -1 -1 s72 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 142 176 -1 -1 s73 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 143 176 -1 -1 s74 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 143 176 -1 -1 s75 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 143 176 -1 -1 s76 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 143 176 -1 -1 s77 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 143 176 -1 -1 s78 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 143 176 -1 -1 s79 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 143 176 -1 -1 s80 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 143 176 -1 -1 s81 s82 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 144 176 -1 -1 r-2(-2 - epsilon .) s91 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 145 176 -1 -1 r-2(-2 - epsilon .) s91 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 146 176 -1 -1 r-2(-2 - epsilon .) s91 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 147 176 -1 -1 r-2(-2 - epsilon .) s91 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 148 176 -1 -1 r-2(-2 - epsilon .) s91 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 149 176 -1 -1 r-2(-2 - epsilon .) s91 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 150 176 -1 -1 r-2(-2 - epsilon .) s91 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 151 176 -1 -1 r-2(-2 - epsilon .) s91 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 332 176 -1 -1 r-2(-2 - epsilon .) s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 331 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - id lpar ArgList rpar .) s194 s346 s256 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 331 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - epsilon .) s194 s346 s256 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 331 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - id lpar ArgList rpar .) s194 s346 s256 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 331 176 r-2(-2 - id lpar ArgList rpar .) -1 r-2(-2 - epsilon .) s194 s346 s256 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 331 176 -1 -1 r-2(-2 - epsilon .) s194 s346 s256 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s322 s361 r-2(-2 - id lpar ArgList rpar .) 
+-1 180 238 513 506 444 399 386 255 331 176 -1 -1 r-2(-2 - epsilon .) s194 s346 s256 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s322 s361 r-2(-2 - id lpar ArgList rpar .) 
+-1 180 238 513 506 444 399 386 255 331 176 -1 -1 r-2(-2 - id lpar ArgList rpar .) s194 s346 s256 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 331 176 -1 -1 r-2(-2 - id lpar ArgList rpar .) s194 s346 s256 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) -1 -1 -1 -1 -1 r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) r-2(-2 - id lpar ArgList rpar .) s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 331 176 -1 -1 r-2(-2 - epsilon .) s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 334 176 -1 -1 r-2(-2 - epsilon .) s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 333 176 -1 -1 r-2(-2 - epsilon .) s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 335 176 -1 -1 r-2(-2 - epsilon .) s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 336 176 -1 -1 r-2(-2 - epsilon .) s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 337 176 -1 -1 r-2(-2 - epsilon .) s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 180 238 513 506 444 399 386 255 338 176 -1 -1 r-2(-2 - epsilon .) s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 181 s183 -1 r-2(-2 - epsilon .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 227 240 519 508 469 424 391 307 343 181 s183 -1 s199 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 227 240 519 508 469 424 391 307 343 181 s183 -1 s200 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 227 240 519 508 469 424 391 307 343 181 s183 -1 s201 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 228 240 519 508 469 424 391 307 343 181 s183 -1 r-2(-2 - epsilon .) s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 182 s183 -1 r-2(-2 - epsilon .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 182 s183 -1 r-2(-2 - epsilon .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 182 s183 -1 r-2(-2 - epsilon .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 225 239 516 507 460 414 389 287 341 -1 -1 -1 -1 s197 s349 s288 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s325 s365 -1 
+-1 227 240 519 508 469 424 391 307 152 -1 -1 -1 -1 s93 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 228 240 519 508 469 424 391 307 153 -1 -1 -1 s94 s103 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 228 240 519 508 469 424 391 307 153 -1 -1 -1 s95 s103 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 228 240 519 508 469 424 391 307 153 -1 -1 -1 s96 s103 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 228 240 519 508 469 424 391 307 153 -1 -1 -1 s97 s103 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 228 240 519 508 469 424 391 307 153 -1 -1 -1 s98 s103 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 228 240 519 508 469 424 391 307 153 -1 -1 -1 s99 s103 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 228 240 519 508 469 424 391 307 153 -1 -1 -1 s100 s103 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 228 240 519 508 469 424 391 307 153 -1 -1 -1 s101 s103 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 228 240 519 508 469 424 391 307 153 -1 -1 -1 -1 s103 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 229 240 519 508 469 424 391 307 154 -1 -1 -1 -1 s105 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 230 240 519 508 469 424 391 307 155 -1 -1 -1 -1 s107 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 231 240 519 508 469 424 391 307 156 -1 -1 -1 -1 s109 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 232 240 519 508 469 424 391 307 157 -1 -1 -1 -1 s111 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 r-2(-2 - lpar E rpar .) -1 r-2(-2 - lpar E rpar .) s121 s351 s308 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 r-2(-2 - lpar E rpar .) -1 s112 s121 s351 s308 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 r-2(-2 - lpar E rpar .) s121 s351 s308 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 s112 s121 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 s113 s121 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 s114 s121 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 s115 s121 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 s116 s121 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 s117 s121 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 r-2(-2 - lpar E rpar .) -1 r-2(-2 - lpar E rpar .) s121 s351 s308 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 r-2(-2 - lpar E rpar .) -1 s118 s121 s351 s308 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 r-2(-2 - lpar E rpar .) -1 r-2(-2 - lpar E rpar .) s121 s351 s308 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) -1 -1 -1 -1 -1 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 r-2(-2 - lpar E rpar .) -1 s118 s121 s351 s308 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) -1 -1 -1 -1 -1 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 s118 s121 s351 s308 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s327 s367 r-2(-2 - lpar E rpar .) 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 s118 s121 s351 s308 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) -1 -1 -1 -1 -1 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s327 s367 r-2(-2 - lpar E rpar .) 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 r-2(-2 - lpar E rpar .) s121 s351 s308 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 r-2(-2 - lpar E rpar .) s121 s351 s308 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) -1 -1 -1 -1 -1 r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) r-2(-2 - lpar E rpar .) s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 s118 s121 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 s119 s121 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 158 -1 -1 -1 -1 s121 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 234 240 519 508 469 424 391 307 159 -1 -1 -1 -1 s123 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 227 240 519 508 469 424 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 228 240 519 508 469 424 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 229 240 519 508 469 424 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 230 240 519 508 469 424 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 231 240 519 508 469 424 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 231 240 519 508 469 424 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 acc-2 
+-1 232 240 519 508 469 424 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 343 -1 -1 -1 s208 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 343 -1 -1 -1 s209 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 343 -1 -1 -1 s210 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 343 -1 -1 -1 s211 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 343 -1 -1 -1 s212 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 343 -1 -1 -1 s213 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 343 -1 -1 -1 s214 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 343 -1 -1 -1 s215 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 233 240 519 508 469 424 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 234 240 519 508 469 424 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 -1 -1 241 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E7 .) -1 r-2(-2 - E7 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s241 -1 -1 -1 -1 
+-1 -1 -1 249 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E7 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s249 -1 -1 -1 -1 
+-1 -1 -1 281 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s281 -1 -1 -1 r-2(-2 - E7 .) 
+-1 -1 -1 301 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E7 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s301 -1 -1 -1 -1 
+-1 220 -1 512 505 443 395 385 247 330 -1 -1 -1 -1 s185 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 220 -1 -1 522 443 395 385 247 330 -1 -1 -1 -1 s185 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 220 -1 -1 -1 -1 396 385 247 330 -1 -1 -1 -1 s185 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 220 -1 -1 -1 -1 397 385 247 330 -1 -1 -1 -1 s185 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 220 -1 -1 -1 -1 398 385 247 330 -1 -1 -1 -1 s185 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 220 -1 -1 -1 -1 -1 434 247 330 -1 -1 -1 -1 s185 s345 s248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 220 -1 -1 -1 -1 -1 -1 378 330 -1 r-2(-2 - E1 .) -1 r-2(-2 - E1 .) s185 s345 -1 r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) s321 s362 -1 
+-1 220 -1 -1 -1 -1 -1 -1 378 330 -1 -1 -1 -1 s185 s345 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s321 s362 -1 
+-1 221 -1 514 506 444 399 386 255 329 -1 -1 -1 -1 s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 221 -1 -1 521 444 399 386 255 329 -1 -1 -1 -1 s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 221 -1 -1 -1 -1 400 386 255 329 -1 -1 -1 -1 s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 221 -1 -1 -1 -1 401 386 255 329 -1 -1 -1 -1 s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 221 -1 -1 -1 -1 402 386 255 329 -1 -1 -1 -1 s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 221 -1 -1 -1 -1 -1 433 255 329 -1 -1 -1 -1 s194 s346 s256 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 221 -1 -1 -1 -1 -1 -1 377 329 -1 r-2(-2 - E1 .) -1 -1 s194 s346 -1 r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) s322 s361 -1 
+-1 221 -1 -1 -1 -1 -1 -1 377 329 -1 -1 -1 -1 s194 s346 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s322 s361 -1 
+-1 222 -1 -1 -1 447 405 387 267 340 -1 -1 -1 -1 s195 s347 s268 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s323 s364 -1 
+-1 222 -1 -1 -1 448 405 387 267 340 -1 -1 -1 -1 s195 s347 s268 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s323 s364 -1 
+-1 222 -1 -1 -1 449 405 387 267 340 -1 -1 -1 -1 s195 s347 s268 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s323 s364 -1 
+-1 222 -1 -1 -1 450 405 387 267 340 -1 -1 -1 -1 s195 s347 s268 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s323 s364 -1 
+-1 222 -1 -1 -1 451 405 387 267 340 -1 -1 -1 -1 s195 s347 s268 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s323 s364 -1 
+-1 222 -1 -1 -1 452 405 387 267 340 -1 -1 -1 -1 s195 s347 s268 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s323 s364 -1 
+-1 222 -1 -1 -1 -1 406 387 267 340 -1 -1 -1 -1 s195 s347 s268 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s323 s364 -1 
+-1 222 -1 -1 -1 -1 407 387 267 340 -1 -1 -1 -1 s195 s347 s268 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s323 s364 -1 
+-1 222 -1 -1 -1 -1 408 387 267 340 -1 -1 -1 -1 s195 s347 s268 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s323 s364 -1 
+-1 222 -1 -1 -1 -1 -1 436 267 340 -1 -1 -1 -1 s195 s347 s268 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s323 s364 -1 
+-1 222 -1 -1 -1 -1 -1 -1 380 340 -1 r-2(-2 - E1 .) -1 r-2(-2 - E1 .) s195 s347 -1 r-2(-2 - E1 .) r-2(-2 - E1 .) -1 -1 -1 -1 -1 r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) s323 s364 -1 
+-1 222 -1 -1 -1 -1 -1 -1 380 340 -1 -1 -1 -1 s195 s347 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s323 s364 -1 
+-1 223 -1 -1 -1 453 409 388 279 339 -1 -1 -1 -1 s196 s348 s280 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s324 s363 -1 
+-1 223 -1 -1 -1 454 409 388 279 339 -1 -1 -1 -1 s196 s348 s280 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s324 s363 -1 
+-1 223 -1 -1 -1 455 409 388 279 339 -1 -1 -1 -1 s196 s348 s280 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s324 s363 -1 
+-1 223 -1 -1 -1 456 409 388 279 339 -1 -1 -1 -1 s196 s348 s280 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s324 s363 -1 
+-1 223 -1 -1 -1 457 409 388 279 339 -1 -1 -1 -1 s196 s348 s280 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s324 s363 -1 
+-1 223 -1 -1 -1 458 409 388 279 339 -1 -1 -1 -1 s196 s348 s280 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s324 s363 -1 
+-1 223 -1 -1 -1 -1 410 388 279 339 -1 -1 -1 -1 s196 s348 s280 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s324 s363 -1 
+-1 223 -1 -1 -1 -1 411 388 279 339 -1 -1 -1 -1 s196 s348 s280 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s324 s363 -1 
+-1 223 -1 -1 -1 -1 412 388 279 339 -1 -1 -1 -1 s196 s348 s280 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s324 s363 -1 
+-1 223 -1 -1 -1 -1 -1 435 279 339 -1 -1 -1 -1 s196 s348 s280 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s324 s363 -1 
+-1 223 -1 -1 -1 -1 -1 -1 379 339 -1 r-2(-2 - E1 .) -1 -1 s196 s348 -1 r-2(-2 - E1 .) r-2(-2 - E1 .) -1 -1 -1 -1 -1 r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) s324 s363 -1 
+-1 223 -1 -1 -1 -1 -1 -1 379 339 -1 -1 -1 -1 s196 s348 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s324 s363 -1 
+-1 224 -1 517 507 460 414 389 287 341 -1 -1 -1 -1 s197 s349 s288 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s325 s365 -1 
+-1 224 -1 -1 523 460 414 389 287 341 -1 -1 -1 -1 s197 s349 s288 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s325 s365 -1 
+-1 224 -1 -1 -1 -1 415 389 287 341 -1 -1 -1 -1 s197 s349 s288 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s325 s365 -1 
+-1 224 -1 -1 -1 -1 416 389 287 341 -1 -1 -1 -1 s197 s349 s288 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s325 s365 -1 
+-1 224 -1 -1 -1 -1 417 389 287 341 -1 -1 -1 -1 s197 s349 s288 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s325 s365 -1 
+-1 224 -1 -1 -1 -1 -1 437 287 341 -1 -1 -1 -1 s197 s349 s288 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s325 s365 -1 
+-1 224 -1 -1 -1 -1 -1 -1 381 341 -1 -1 -1 -1 s197 s349 -1 r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) s325 s365 r-2(-2 - E1 .) 
+-1 224 -1 -1 -1 -1 -1 -1 381 341 -1 -1 -1 -1 s197 s349 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s325 s365 -1 
+-1 226 -1 -1 -1 462 419 390 299 342 -1 -1 -1 -1 s198 s350 s300 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s326 s366 -1 
+-1 226 -1 -1 -1 463 419 390 299 342 -1 -1 -1 -1 s198 s350 s300 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s326 s366 -1 
+-1 226 -1 -1 -1 464 419 390 299 342 -1 -1 -1 -1 s198 s350 s300 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s326 s366 -1 
+-1 226 -1 -1 -1 465 419 390 299 342 -1 -1 -1 -1 s198 s350 s300 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s326 s366 -1 
+-1 226 -1 -1 -1 466 419 390 299 342 -1 -1 -1 -1 s198 s350 s300 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s326 s366 -1 
+-1 226 -1 -1 -1 467 419 390 299 342 -1 -1 -1 -1 s198 s350 s300 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s326 s366 -1 
+-1 226 -1 -1 -1 -1 420 390 299 342 -1 -1 -1 -1 s198 s350 s300 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s326 s366 -1 
+-1 226 -1 -1 -1 -1 421 390 299 342 -1 -1 -1 -1 s198 s350 s300 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s326 s366 -1 
+-1 226 -1 -1 -1 -1 422 390 299 342 -1 -1 -1 -1 s198 s350 s300 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s326 s366 -1 
+-1 226 -1 -1 -1 -1 -1 438 299 342 -1 -1 -1 -1 s198 s350 s300 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s326 s366 -1 
+-1 226 -1 -1 -1 -1 -1 -1 382 342 -1 -1 -1 -1 s198 s350 -1 r-2(-2 - E1 .) r-2(-2 - E1 .) -1 -1 -1 -1 -1 r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) s326 s366 r-2(-2 - E1 .) 
+-1 226 -1 -1 -1 -1 -1 -1 382 342 -1 -1 -1 -1 s198 s350 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s326 s366 -1 
+-1 235 -1 520 508 469 424 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 235 -1 -1 524 469 424 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 235 -1 -1 -1 -1 425 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 235 -1 -1 -1 -1 426 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 235 -1 -1 -1 -1 427 391 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 235 -1 -1 -1 -1 -1 439 307 343 -1 -1 -1 -1 s218 s351 s308 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 235 -1 -1 -1 -1 -1 -1 383 343 -1 -1 -1 r-2(-2 - E1 .) s218 s351 -1 r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) s327 s367 -1 
+-1 235 -1 -1 -1 -1 -1 -1 383 343 -1 -1 -1 -1 s218 s351 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s327 s367 -1 
+-1 236 -1 -1 -1 471 429 392 319 344 -1 -1 -1 -1 s219 s352 s320 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s328 s368 -1 
+-1 236 -1 -1 -1 472 429 392 319 344 -1 -1 -1 -1 s219 s352 s320 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s328 s368 -1 
+-1 236 -1 -1 -1 473 429 392 319 344 -1 -1 -1 -1 s219 s352 s320 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s328 s368 -1 
+-1 236 -1 -1 -1 474 429 392 319 344 -1 -1 -1 -1 s219 s352 s320 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s328 s368 -1 
+-1 236 -1 -1 -1 475 429 392 319 344 -1 -1 -1 -1 s219 s352 s320 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s328 s368 -1 
+-1 236 -1 -1 -1 476 429 392 319 344 -1 -1 -1 -1 s219 s352 s320 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s328 s368 -1 
+-1 236 -1 -1 -1 -1 430 392 319 344 -1 -1 -1 -1 s219 s352 s320 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s328 s368 -1 
+-1 236 -1 -1 -1 -1 431 392 319 344 -1 -1 -1 -1 s219 s352 s320 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s328 s368 -1 
+-1 236 -1 -1 -1 -1 432 392 319 344 -1 -1 -1 -1 s219 s352 s320 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s328 s368 -1 
+-1 236 -1 -1 -1 -1 -1 440 319 344 -1 -1 -1 -1 s219 s352 s320 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s328 s368 -1 
+-1 236 -1 -1 -1 -1 -1 -1 384 344 -1 -1 -1 r-2(-2 - E1 .) s219 s352 -1 r-2(-2 - E1 .) r-2(-2 - E1 .) -1 -1 -1 -1 -1 r-2(-2 - E1 .) r-2(-2 - E1 .) r-2(-2 - E1 .) s328 s368 -1 
+-1 236 -1 -1 -1 -1 -1 -1 384 344 -1 -1 -1 -1 s219 s352 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s328 s368 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 160 -1 r-2(-2 - id .) -1 r-2(-2 - id .) s160 s354 -1 r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) s370 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 169 -1 r-2(-2 - id .) -1 -1 s169 s353 -1 r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) s369 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 170 -1 r-2(-2 - id .) -1 r-2(-2 - id .) s170 s356 -1 r-2(-2 - id .) r-2(-2 - id .) -1 -1 -1 -1 -1 r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) s372 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 171 -1 r-2(-2 - id .) -1 -1 s171 s355 -1 r-2(-2 - id .) r-2(-2 - id .) -1 -1 -1 -1 -1 r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) s371 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 172 -1 -1 -1 -1 s172 s357 -1 r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) s373 -1 r-2(-2 - id .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 173 -1 -1 -1 -1 s173 s358 -1 r-2(-2 - id .) r-2(-2 - id .) -1 -1 -1 -1 -1 r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) s374 -1 r-2(-2 - id .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 174 -1 -1 -1 r-2(-2 - id .) s174 s359 -1 r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) s375 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 175 -1 -1 -1 r-2(-2 - id .) s175 s360 -1 r-2(-2 - id .) r-2(-2 - id .) -1 -1 -1 -1 -1 r-2(-2 - id .) r-2(-2 - id .) r-2(-2 - id .) s376 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 169 -1 -1 -1 -1 s169 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 160 -1 -1 -1 -1 s160 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 169 -1 -1 -1 s162 s169 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 169 -1 -1 -1 s161 s169 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 169 -1 -1 -1 s164 s169 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 169 -1 -1 -1 s163 s169 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 169 -1 -1 -1 s165 s169 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 169 -1 -1 -1 s166 s169 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 169 -1 -1 -1 s167 s169 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 169 -1 -1 -1 s168 s169 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 171 -1 -1 -1 -1 s171 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 170 -1 -1 -1 -1 s170 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 172 -1 -1 -1 -1 s172 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 173 -1 -1 -1 -1 s173 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 174 -1 -1 -1 -1 s174 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 175 -1 -1 -1 -1 s175 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s354 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s370 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s353 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s369 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s356 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s372 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s355 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s371 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s357 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s373 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s358 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s374 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s359 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s375 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s360 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s376 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - id opinc .) -1 -1 -1 -1 -1 r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - id opinc .) -1 r-2(-2 - id opinc .) -1 -1 -1 r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - id opinc .) -1 -1 -1 -1 -1 r-2(-2 - id opinc .) r-2(-2 - id opinc .) -1 -1 -1 -1 -1 r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - id opinc .) -1 r-2(-2 - id opinc .) -1 -1 -1 r-2(-2 - id opinc .) r-2(-2 - id opinc .) -1 -1 -1 -1 -1 r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) -1 -1 r-2(-2 - id opinc .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - id opinc .) r-2(-2 - id opinc .) -1 -1 -1 -1 -1 r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) -1 -1 r-2(-2 - id opinc .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - id opinc .) -1 -1 -1 r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - id opinc .) -1 -1 -1 r-2(-2 - id opinc .) r-2(-2 - id opinc .) -1 -1 -1 -1 -1 r-2(-2 - id opinc .) r-2(-2 - id opinc .) r-2(-2 - id opinc .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - num .) -1 -1 -1 -1 -1 r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - num .) -1 r-2(-2 - num .) -1 -1 -1 r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - num .) -1 -1 -1 -1 -1 r-2(-2 - num .) r-2(-2 - num .) -1 -1 -1 -1 -1 r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - num .) -1 r-2(-2 - num .) -1 -1 -1 r-2(-2 - num .) r-2(-2 - num .) -1 -1 -1 -1 -1 r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) -1 -1 r-2(-2 - num .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - num .) r-2(-2 - num .) -1 -1 -1 -1 -1 r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) -1 -1 r-2(-2 - num .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - num .) -1 -1 -1 r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - num .) -1 -1 -1 r-2(-2 - num .) r-2(-2 - num .) -1 -1 -1 -1 -1 r-2(-2 - num .) r-2(-2 - num .) r-2(-2 - num .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opinc id .) -1 -1 -1 -1 -1 r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opinc id .) -1 r-2(-2 - opinc id .) -1 -1 -1 r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opinc id .) -1 -1 -1 -1 -1 r-2(-2 - opinc id .) r-2(-2 - opinc id .) -1 -1 -1 -1 -1 r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opinc id .) -1 r-2(-2 - opinc id .) -1 -1 -1 r-2(-2 - opinc id .) r-2(-2 - opinc id .) -1 -1 -1 -1 -1 r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) -1 -1 r-2(-2 - opinc id .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opinc id .) r-2(-2 - opinc id .) -1 -1 -1 -1 -1 r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) -1 -1 r-2(-2 - opinc id .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opinc id .) -1 -1 -1 r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opinc id .) -1 -1 -1 r-2(-2 - opinc id .) r-2(-2 - opinc id .) -1 -1 -1 -1 -1 r-2(-2 - opinc id .) r-2(-2 - opinc id .) r-2(-2 - opinc id .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) -1 r-2(-2 - opnot E1 .) -1 -1 -1 r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) -1 r-2(-2 - opnot E1 .) -1 -1 -1 r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) -1 -1 r-2(-2 - opnot E1 .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) -1 -1 r-2(-2 - opnot E1 .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) -1 -1 -1 r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) -1 -1 -1 r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) -1 -1 -1 -1 -1 r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) r-2(-2 - opnot E1 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 246 -1 -1 -1 r-2(-2 - E2 .) -1 r-2(-2 - E2 .) -1 -1 -1 s246 r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 254 -1 -1 -1 r-2(-2 - E2 .) -1 -1 -1 -1 -1 s254 r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 266 -1 -1 -1 r-2(-2 - E2 .) -1 r-2(-2 - E2 .) -1 -1 -1 s266 r-2(-2 - E2 .) -1 -1 -1 -1 -1 r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 278 -1 -1 -1 r-2(-2 - E2 .) -1 -1 -1 -1 -1 s278 r-2(-2 - E2 .) -1 -1 -1 -1 -1 r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 286 -1 -1 -1 -1 -1 -1 -1 -1 -1 s286 r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) -1 -1 r-2(-2 - E2 .) 
+-1 -1 -1 -1 -1 -1 -1 298 -1 -1 -1 -1 -1 -1 -1 -1 -1 s298 r-2(-2 - E2 .) -1 -1 -1 -1 -1 r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) -1 -1 r-2(-2 - E2 .) 
+-1 -1 -1 -1 -1 -1 -1 306 -1 -1 -1 -1 -1 r-2(-2 - E2 .) -1 -1 -1 s306 r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 318 -1 -1 -1 -1 -1 r-2(-2 - E2 .) -1 -1 -1 s318 r-2(-2 - E2 .) -1 -1 -1 -1 -1 r-2(-2 - E2 .) r-2(-2 - E2 .) r-2(-2 - E2 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 254 -1 -1 -1 -1 -1 -1 -1 -1 -1 s254 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 246 -1 -1 -1 -1 -1 -1 -1 -1 -1 s246 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 244 246 -1 -1 -1 r-2(-2 - E3 .) -1 r-2(-2 - E3 .) -1 -1 -1 s246 s243 r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) s245 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 246 -1 -1 -1 r-2(-2 - E4 opminus E3 .) -1 r-2(-2 - E4 opminus E3 .) -1 -1 -1 s246 r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 246 -1 -1 -1 r-2(-2 - E4 opplus E3 .) -1 r-2(-2 - E4 opplus E3 .) -1 -1 -1 s246 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 246 -1 -1 -1 r-2(-2 - E4 opplus E3 .) -1 r-2(-2 - E4 opplus E3 .) -1 -1 -1 s246 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 252 254 -1 -1 -1 r-2(-2 - E3 .) -1 -1 -1 -1 -1 s254 s251 r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) s253 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 254 -1 -1 -1 r-2(-2 - E4 opminus E3 .) -1 -1 -1 -1 -1 s254 r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 254 -1 -1 -1 r-2(-2 - E4 opplus E3 .) -1 -1 -1 -1 -1 s254 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 254 -1 -1 -1 r-2(-2 - E4 opplus E3 .) -1 -1 -1 -1 -1 s254 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 278 -1 -1 -1 -1 -1 -1 -1 -1 -1 s278 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 266 -1 -1 -1 -1 -1 -1 -1 -1 -1 s266 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 264 266 -1 -1 -1 r-2(-2 - E3 .) -1 r-2(-2 - E3 .) -1 -1 -1 s266 s263 -1 -1 -1 -1 -1 r-2(-2 - E3 .) r-2(-2 - E3 .) s265 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 266 -1 -1 -1 r-2(-2 - E4 opminus E3 .) -1 r-2(-2 - E4 opminus E3 .) -1 -1 -1 s266 r-2(-2 - E4 opminus E3 .) -1 -1 -1 -1 -1 r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 266 -1 -1 -1 r-2(-2 - E4 opplus E3 .) -1 r-2(-2 - E4 opplus E3 .) -1 -1 -1 s266 r-2(-2 - E4 opplus E3 .) -1 -1 -1 -1 -1 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 266 -1 -1 -1 r-2(-2 - E4 opplus E3 .) -1 r-2(-2 - E4 opplus E3 .) -1 -1 -1 s266 r-2(-2 - E4 opplus E3 .) -1 -1 -1 -1 -1 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 276 278 -1 -1 -1 r-2(-2 - E3 .) -1 -1 -1 -1 -1 s278 s275 -1 -1 -1 -1 -1 r-2(-2 - E3 .) r-2(-2 - E3 .) s277 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 278 -1 -1 -1 r-2(-2 - E4 opminus E3 .) -1 -1 -1 -1 -1 s278 r-2(-2 - E4 opminus E3 .) -1 -1 -1 -1 -1 r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 278 -1 -1 -1 r-2(-2 - E4 opplus E3 .) -1 -1 -1 -1 -1 s278 r-2(-2 - E4 opplus E3 .) -1 -1 -1 -1 -1 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 278 -1 -1 -1 r-2(-2 - E4 opplus E3 .) -1 -1 -1 -1 -1 s278 r-2(-2 - E4 opplus E3 .) -1 -1 -1 -1 -1 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 286 -1 -1 -1 -1 -1 -1 -1 -1 -1 s286 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 284 286 -1 -1 -1 -1 -1 -1 -1 -1 -1 s286 s283 r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) s285 -1 -1 r-2(-2 - E3 .) 
+-1 -1 -1 -1 -1 -1 -1 286 -1 -1 -1 -1 -1 -1 -1 -1 -1 s286 r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) -1 -1 r-2(-2 - E4 opminus E3 .) 
+-1 -1 -1 -1 -1 -1 -1 286 -1 -1 -1 -1 -1 -1 -1 -1 -1 s286 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 r-2(-2 - E4 opplus E3 .) 
+-1 -1 -1 -1 -1 -1 -1 286 -1 -1 -1 -1 -1 -1 -1 -1 -1 s286 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 r-2(-2 - E4 opplus E3 .) 
+-1 -1 -1 -1 -1 -1 -1 298 -1 -1 -1 -1 -1 -1 -1 -1 -1 s298 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 296 298 -1 -1 -1 -1 -1 -1 -1 -1 -1 s298 s295 -1 -1 -1 -1 -1 r-2(-2 - E3 .) r-2(-2 - E3 .) s297 -1 -1 r-2(-2 - E3 .) 
+-1 -1 -1 -1 -1 -1 -1 298 -1 -1 -1 -1 -1 -1 -1 -1 -1 s298 r-2(-2 - E4 opminus E3 .) -1 -1 -1 -1 -1 r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) -1 -1 r-2(-2 - E4 opminus E3 .) 
+-1 -1 -1 -1 -1 -1 -1 298 -1 -1 -1 -1 -1 -1 -1 -1 -1 s298 r-2(-2 - E4 opplus E3 .) -1 -1 -1 -1 -1 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 r-2(-2 - E4 opplus E3 .) 
+-1 -1 -1 -1 -1 -1 -1 298 -1 -1 -1 -1 -1 -1 -1 -1 -1 s298 r-2(-2 - E4 opplus E3 .) -1 -1 -1 -1 -1 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 r-2(-2 - E4 opplus E3 .) 
+-1 -1 -1 -1 -1 -1 -1 306 -1 -1 -1 -1 -1 -1 -1 -1 -1 s306 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 304 306 -1 -1 -1 -1 -1 r-2(-2 - E3 .) -1 -1 -1 s306 s303 r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) r-2(-2 - E3 .) s305 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 306 -1 -1 -1 -1 -1 r-2(-2 - E4 opminus E3 .) -1 -1 -1 s306 r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 306 -1 -1 -1 -1 -1 r-2(-2 - E4 opplus E3 .) -1 -1 -1 s306 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 306 -1 -1 -1 -1 -1 r-2(-2 - E4 opplus E3 .) -1 -1 -1 s306 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 318 -1 -1 -1 -1 -1 -1 -1 -1 -1 s318 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 316 318 -1 -1 -1 -1 -1 r-2(-2 - E3 .) -1 -1 -1 s318 s315 -1 -1 -1 -1 -1 r-2(-2 - E3 .) r-2(-2 - E3 .) s317 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 318 -1 -1 -1 -1 -1 r-2(-2 - E4 opminus E3 .) -1 -1 -1 s318 r-2(-2 - E4 opminus E3 .) -1 -1 -1 -1 -1 r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) r-2(-2 - E4 opminus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 318 -1 -1 -1 -1 -1 r-2(-2 - E4 opplus E3 .) -1 -1 -1 s318 r-2(-2 - E4 opplus E3 .) -1 -1 -1 -1 -1 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 318 -1 -1 -1 -1 -1 r-2(-2 - E4 opplus E3 .) -1 -1 -1 s318 r-2(-2 - E4 opplus E3 .) -1 -1 -1 -1 -1 r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) r-2(-2 - E4 opplus E3 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) -1 r-2(-2 - E3 opmul E2 .) -1 -1 -1 r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) -1 r-2(-2 - E3 opmul E2 .) -1 -1 -1 r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) -1 -1 r-2(-2 - E3 opmul E2 .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) -1 -1 r-2(-2 - E3 opmul E2 .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) -1 -1 -1 r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) -1 -1 -1 r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) -1 -1 -1 -1 -1 r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) r-2(-2 - E3 opmul E2 .) -1 -1 -1 
+-1 -1 -1 -1 -1 -1 251 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s251 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 243 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s243 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 258 244 -1 -1 -1 -1 r-2(-2 - E4 .) -1 r-2(-2 - E4 .) -1 -1 -1 -1 s243 s260 s259 s261 s262 s257 r-2(-2 - E4 .) r-2(-2 - E4 .) s245 -1 -1 -1 
+-1 -1 -1 -1 -1 270 252 -1 -1 -1 -1 r-2(-2 - E4 .) -1 -1 -1 -1 -1 -1 s251 s272 s271 s273 s274 s269 r-2(-2 - E4 .) r-2(-2 - E4 .) s253 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 275 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s275 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 263 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s263 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 264 -1 -1 -1 -1 r-2(-2 - E4 opeq E4 .) -1 r-2(-2 - E4 opeq E4 .) -1 -1 -1 -1 s263 -1 -1 -1 -1 -1 r-2(-2 - E4 opeq E4 .) r-2(-2 - E4 opeq E4 .) s265 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 264 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) -1 r-2(-2 - E4 opne E4 .) -1 -1 -1 -1 s263 -1 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) r-2(-2 - E4 opne E4 .) s265 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 264 -1 -1 -1 -1 r-2(-2 - E4 opgt E4 .) -1 r-2(-2 - E4 opgt E4 .) -1 -1 -1 -1 s263 -1 -1 -1 -1 -1 r-2(-2 - E4 opgt E4 .) r-2(-2 - E4 opgt E4 .) s265 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 264 -1 -1 -1 -1 r-2(-2 - E4 ople E4 .) -1 r-2(-2 - E4 ople E4 .) -1 -1 -1 -1 s263 -1 -1 -1 -1 -1 r-2(-2 - E4 ople E4 .) r-2(-2 - E4 ople E4 .) s265 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 264 -1 -1 -1 -1 r-2(-2 - E4 oplt E4 .) -1 r-2(-2 - E4 oplt E4 .) -1 -1 -1 -1 s263 -1 -1 -1 -1 -1 r-2(-2 - E4 oplt E4 .) r-2(-2 - E4 oplt E4 .) s265 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 264 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) -1 r-2(-2 - E4 opne E4 .) -1 -1 -1 -1 s263 -1 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) r-2(-2 - E4 opne E4 .) s265 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 276 -1 -1 -1 -1 r-2(-2 - E4 opeq E4 .) -1 -1 -1 -1 -1 -1 s275 -1 -1 -1 -1 -1 r-2(-2 - E4 opeq E4 .) r-2(-2 - E4 opeq E4 .) s277 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 276 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) -1 -1 -1 -1 -1 -1 s275 -1 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) r-2(-2 - E4 opne E4 .) s277 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 276 -1 -1 -1 -1 r-2(-2 - E4 opgt E4 .) -1 -1 -1 -1 -1 -1 s275 -1 -1 -1 -1 -1 r-2(-2 - E4 opgt E4 .) r-2(-2 - E4 opgt E4 .) s277 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 276 -1 -1 -1 -1 r-2(-2 - E4 ople E4 .) -1 -1 -1 -1 -1 -1 s275 -1 -1 -1 -1 -1 r-2(-2 - E4 ople E4 .) r-2(-2 - E4 ople E4 .) s277 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 276 -1 -1 -1 -1 r-2(-2 - E4 oplt E4 .) -1 -1 -1 -1 -1 -1 s275 -1 -1 -1 -1 -1 r-2(-2 - E4 oplt E4 .) r-2(-2 - E4 oplt E4 .) s277 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 276 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) -1 -1 -1 -1 -1 -1 s275 -1 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) r-2(-2 - E4 opne E4 .) s277 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 283 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s283 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 290 284 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s283 s292 s291 s293 s294 s289 r-2(-2 - E4 .) r-2(-2 - E4 .) s285 -1 -1 r-2(-2 - E4 .) 
+-1 -1 -1 -1 -1 -1 295 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s295 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 296 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s295 -1 -1 -1 -1 -1 r-2(-2 - E4 opeq E4 .) r-2(-2 - E4 opeq E4 .) s297 -1 -1 r-2(-2 - E4 opeq E4 .) 
+-1 -1 -1 -1 -1 -1 296 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s295 -1 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) r-2(-2 - E4 opne E4 .) s297 -1 -1 r-2(-2 - E4 opne E4 .) 
+-1 -1 -1 -1 -1 -1 296 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s295 -1 -1 -1 -1 -1 r-2(-2 - E4 opgt E4 .) r-2(-2 - E4 opgt E4 .) s297 -1 -1 r-2(-2 - E4 opgt E4 .) 
+-1 -1 -1 -1 -1 -1 296 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s295 -1 -1 -1 -1 -1 r-2(-2 - E4 ople E4 .) r-2(-2 - E4 ople E4 .) s297 -1 -1 r-2(-2 - E4 ople E4 .) 
+-1 -1 -1 -1 -1 -1 296 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s295 -1 -1 -1 -1 -1 r-2(-2 - E4 oplt E4 .) r-2(-2 - E4 oplt E4 .) s297 -1 -1 r-2(-2 - E4 oplt E4 .) 
+-1 -1 -1 -1 -1 -1 296 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s295 -1 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) r-2(-2 - E4 opne E4 .) s297 -1 -1 r-2(-2 - E4 opne E4 .) 
+-1 -1 -1 -1 -1 -1 303 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s303 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 310 304 -1 -1 -1 -1 -1 -1 r-2(-2 - E4 .) -1 -1 -1 -1 s303 s312 s311 s313 s314 s309 r-2(-2 - E4 .) r-2(-2 - E4 .) s305 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 315 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s315 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 316 -1 -1 -1 -1 -1 -1 r-2(-2 - E4 opeq E4 .) -1 -1 -1 -1 s315 -1 -1 -1 -1 -1 r-2(-2 - E4 opeq E4 .) r-2(-2 - E4 opeq E4 .) s317 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 316 -1 -1 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) -1 -1 -1 -1 s315 -1 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) r-2(-2 - E4 opne E4 .) s317 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 316 -1 -1 -1 -1 -1 -1 r-2(-2 - E4 opgt E4 .) -1 -1 -1 -1 s315 -1 -1 -1 -1 -1 r-2(-2 - E4 opgt E4 .) r-2(-2 - E4 opgt E4 .) s317 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 316 -1 -1 -1 -1 -1 -1 r-2(-2 - E4 ople E4 .) -1 -1 -1 -1 s315 -1 -1 -1 -1 -1 r-2(-2 - E4 ople E4 .) r-2(-2 - E4 ople E4 .) s317 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 316 -1 -1 -1 -1 -1 -1 r-2(-2 - E4 oplt E4 .) -1 -1 -1 -1 s315 -1 -1 -1 -1 -1 r-2(-2 - E4 oplt E4 .) r-2(-2 - E4 oplt E4 .) s317 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 316 -1 -1 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) -1 -1 -1 -1 s315 -1 -1 -1 -1 -1 r-2(-2 - E4 opne E4 .) r-2(-2 - E4 opne E4 .) s317 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 253 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s253 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 245 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s245 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 277 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s277 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 265 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s265 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 285 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s285 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 297 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s297 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 305 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s305 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 317 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s317 -1 -1 -1 
+-1 -1 -1 -1 -1 269 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s269 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 257 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s257 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 289 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s289 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 309 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s309 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 271 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s271 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 259 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s259 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 291 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s291 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 311 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s311 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 272 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s272 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 260 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s260 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 292 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s292 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 312 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s312 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 273 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s273 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 261 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s261 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 293 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s293 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 313 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s313 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 274 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s274 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 262 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s262 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 294 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s294 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 314 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s314 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 242 -1 -1 -1 -1 -1 -1 r-2(-2 - E5 .) -1 r-2(-2 - E5 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s242 r-2(-2 - E5 .) -1 -1 -1 -1 
+-1 -1 -1 -1 250 -1 -1 -1 -1 -1 -1 r-2(-2 - E5 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s250 r-2(-2 - E5 .) -1 -1 -1 -1 
+-1 -1 -1 -1 282 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s282 r-2(-2 - E5 .) -1 -1 -1 r-2(-2 - E5 .) 
+-1 -1 -1 -1 302 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E5 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s302 r-2(-2 - E5 .) -1 -1 -1 -1 
+-1 -1 -1 -1 250 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s250 -1 -1 -1 -1 -1 
+-1 -1 -1 -1 242 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s242 -1 -1 -1 -1 -1 
+-1 -1 -1 241 242 -1 -1 -1 -1 -1 -1 r-2(-2 - E6 .) -1 r-2(-2 - E6 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s242 s241 -1 -1 -1 -1 
+-1 -1 -1 -1 242 -1 -1 -1 -1 -1 -1 r-2(-2 - E7 opor E6 .) -1 r-2(-2 - E7 opor E6 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s242 r-2(-2 - E7 opor E6 .) -1 -1 -1 -1 
+-1 -1 -1 249 250 -1 -1 -1 -1 -1 -1 r-2(-2 - E6 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s250 s249 -1 -1 -1 -1 
+-1 -1 -1 -1 250 -1 -1 -1 -1 -1 -1 r-2(-2 - E7 opor E6 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s250 r-2(-2 - E7 opor E6 .) -1 -1 -1 -1 
+-1 -1 -1 -1 282 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s282 -1 -1 -1 -1 -1 
+-1 -1 -1 281 282 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s282 s281 -1 -1 -1 r-2(-2 - E6 .) 
+-1 -1 -1 -1 282 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s282 r-2(-2 - E7 opor E6 .) -1 -1 -1 r-2(-2 - E7 opor E6 .) 
+-1 -1 -1 -1 302 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s302 -1 -1 -1 -1 -1 
+-1 -1 -1 301 302 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E6 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s302 s301 -1 -1 -1 -1 
+-1 -1 -1 -1 302 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E7 opor E6 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s302 r-2(-2 - E7 opor E6 .) -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E6 opand E5 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E6 opand E5 .) r-2(-2 - E6 opand E5 .) -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E6 opand E5 .) -1 r-2(-2 - E6 opand E5 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E6 opand E5 .) r-2(-2 - E6 opand E5 .) -1 -1 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E6 opand E5 .) r-2(-2 - E6 opand E5 .) -1 -1 -1 r-2(-2 - E6 opand E5 .) 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E6 opand E5 .) -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 r-2(-2 - E6 opand E5 .) r-2(-2 - E6 opand E5 .) -1 -1 -1 -1 
+-1 -1 -1 249 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s249 -1 -1 -1 -1 
+-1 -1 -1 241 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s241 -1 -1 -1 -1 
+-1 -1 -1 281 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s281 -1 -1 -1 -1 
+-1 -1 -1 301 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 s301 -1 -1 -1 -1 

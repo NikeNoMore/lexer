@@ -25,6 +25,7 @@ string other = "";
 string no_lexem = "";
 map<int, vector<E>> G = {
 {0, {E{" ", true, false, 0, no_lexem},
+    E{".", true, true, 0, "point"},
     E{"\n", true, false, 0, no_lexem},
     E{"", true, false, 0, no_lexem},
     E("(", true, false, 0, "lpar"),

@@ -11,6 +11,8 @@ using Lexem = pair<string, string>;
 using Rule = pair<string, vector<string>>;
 map<string, int> num_nodes;
 string starting_symb = "e";
+int temp_counter = 1;
+int label_counter = 1;
 
 pair<Lexem, int> numerate(Lexem& lex) {
     if (num_nodes.contains(lex.first)) {
@@ -22,180 +24,7 @@ pair<Lexem, int> numerate(Lexem& lex) {
     return { lex, num_nodes[lex.first]};
 }
 
-map<string, set<string>> FirstForG(vector<Rule>& G, vector<string>& t) {
-    map<string, set<string>> res;
-    for (auto& x : t) {
-        res[x] = { x };
-    }
-    bool flag = true;
-    while (flag) {
-        flag = false;
-        map<string, set<string>> temp = res;
-        for (auto& x : G) {
-            for (auto& y : x.second) {
-                if (y != "epsilon") {
-                    if (temp.contains(y)) {
-                        for (string z : temp[y]) {
-                            temp[x.first].insert(z);
-                        }
-                        if (find(temp[y].begin(), temp[y].end(), "epsilon") == temp[y].end()) {
-                            break;
-                        }
-                    }
-                    else {
-                        break;
-                    }
-                }
-            }
-        }
-        for (auto& x : temp) {
-            if (res.contains(x.first)) {
-                if (x.second != res[x.first]) {
-                    flag = true;
-                    res = temp;
-                    break;
-                }
-            }
-            else {
-                flag = true;
-                res = temp;
-                break;
-            }
-        }
-    }
-    return res;
-}
-
-vector<string> First(vector<string>& str, map<string, set<string>>& table) {
-    vector<string> res;
-    for (auto& x : str) {
-        bool flag = false;
-        for (auto& y : table[x]) {
-            if (y != "epsilon") {
-                res.push_back(y);
-            }
-            else {
-                flag = true;
-                if (y == *str.rbegin()) {
-                    res.push_back("epsilon");
-                }
-            }
-        }
-        if (!flag) {
-            return res;
-        }
-    }
-    return res;
-}
-
-set<pair<Rule, string>> Closure(vector<Rule> &G, map<string, set<string>>& F, vector<string>& t, set<pair<Rule, string>>& I) {
-    set<pair<Rule, string>> prev = I;
-    for (auto& x : I) {
-        int flag = 0;
-        vector<string> temp;
-        string non_term = "";
-        set<string> first_;
-        for (auto& y : x.first.second) {
-            if (flag == 0) {
-                if (y == ".") {
-                    flag = 1;
-                }
-            }
-            else if(flag == 1) {
-                non_term = y;
-                flag = 2;
-            }
-            else {
-                temp.push_back(y);
-            }
-        }
-        if (non_term != "") {
-            if (find(t.begin(), t.end(), non_term) == t.end()) {
-                temp.push_back(x.second);
-                for (auto& y : First(temp, F)) {
-                    first_.insert(y);
-                }
-                for (auto& g : G) {
-                    if (g.first == non_term) {
-                        vector<string> temp1 = { "." };
-                        for (auto& y : g.second) {
-                            temp1.push_back(y);
-                        }
-                        for (auto& y : first_) {
-                            I.insert({ {non_term, temp1}, y });
-                        }
-                    }
-                }
-            }
-        }
-    }
-    if (prev != I) {
-        return Closure(G, F, t, I);
-    }
-    else {
-        return I;
-    }
-}
-
-set<pair<Rule, string>> GoTo(const set<pair<Rule, string>>& I, string& X, vector<Rule>& G, map<string, set<string>>& F, vector<string>& t) {
-    set<pair<Rule, string>> res;
-    for (auto& x : I) {
-        bool point = false;
-        bool flag = false;  
-        for (auto& y : x.first.second) {
-            if (!point) {
-                if (y == ".") {
-                    point = true;
-                }
-            }
-            else {
-                if (y == X) {
-                    flag = true;
-                }
-            }
-        }
-        if (flag) {
-            vector<string> temp;
-            point = false;
-            for (auto& y : x.first.second) {
-                if (y != "." && !point) {
-                    temp.push_back(y);
-                }
-                else if (!point) {
-                    point = true;
-                }
-                else if (point) {
-                    temp.push_back(y);
-                    temp.push_back(".");
-                    point = false;
-                }
-            }
-            res.insert({ {x.first.first, temp}, x.second });
-        }
-    }
-    return Closure(G, F, t, res);
-}
-
-set<set<pair<Rule, string>>> items(set<set<pair<Rule, string>>>& I, vector<Rule>& G, map<string, set<string>>& F, vector<string>& alph, vector<string>& t){
-    set<set<pair<Rule, string>>> C = I;
-    set<set<pair<Rule, string>>> prev = C;
-    for (auto& x : C) {
-        for (auto& y : alph) {
-            set<pair<Rule, string>> temp = GoTo(x, y, G, F, t);
-            if (!temp.empty()) {
-                C.insert(temp);
-            }
-        }
-    }
-    if (C != prev) {
-        return items(C, G, F, alph, t);
-    }
-    else {
-        return C;
-    }
-}
-
-void tick(Lexem symb, vector<int>& state, vector<pair<Lexem, int>>& stack, vector<string>& alphabet, vector<vector<pair<string, pair<int, Rule>>>>& E, map<pair<Lexem, int>, vector<pair<Lexem, int>>>& tree) {
+void tick(Lexem symb, vector<int>& state, vector<pair<Lexem, int>>& stack, vector<string>& alphabet, vector<vector<pair<string, pair<int, Rule>>>>& E, map<pair<Lexem, int>, vector<pair<Lexem, int>>>& tree, bool& eps_flag) {
     int huh = *state.rbegin();
     int term_id;
     if (symb.first.empty()) {
@@ -222,28 +51,29 @@ void tick(Lexem symb, vector<int>& state, vector<pair<Lexem, int>>& stack, vecto
     }
     if (heh.first == "r") {
         auto it1 = heh.second.second.second.rbegin();
-        it1++;
-        auto it2 = stack.begin();
-        while (*it1 != (*it2).first.first) {
-            it2++;
-        }
         auto it3 = stack.rbegin();
-        while ((*it3).first != (*it2).first) {
-            it3++;
+        while (*it1 != (*it3).first.first) {
+            if (*it1 == "epsilon") {
+                eps_flag = true;
+                break;
+            }
+            else {
+                it3--;
+            }
         }
         int counter = 0;
         vector<pair<Lexem, int>> temp_;
-        for (it1; it1 != heh.second.second.second.rend(); it1++) {
-            if ((*it3).first.first == *it1) {
-                counter += 1;
-                temp_.push_back(*it3);
-                it3 = decltype(it3)(stack.erase(next(it3).base()));
-                /*advance(it3, 1);
-                stack.erase(it3.base());*/
-            }
-            else {
-                cout << "ERROR, STUPID";
-                return;
+        if(!eps_flag){
+            for (it1; it1 != heh.second.second.second.rend(); it1++) {
+                if ((*it3).first.first == *it1) {
+                    counter += 1;
+                    temp_.push_back(*it3);
+                    it3 = decltype(it3)(stack.erase(next(it3).base()));
+                }
+                else {
+                    cout << "ERROR, STUPID";
+                    return;
+                }
             }
         }
         if (heh.second.first != -2) {
@@ -260,8 +90,20 @@ void tick(Lexem symb, vector<int>& state, vector<pair<Lexem, int>>& stack, vecto
         for (auto& y : temp_) {
             tree[*stack.rbegin()].push_back(y);
         }
-        tick({ "", ""}, state, stack, alphabet, E, tree);
-        tick({ alphabet[term_id], ""}, state, stack, alphabet, E, tree);
+        if (!eps_flag) {
+            tick({ "", "" }, state, stack, alphabet, E, tree, eps_flag);
+            tick(symb, state, stack, alphabet, E, tree, eps_flag);
+            if (eps_flag) {
+                eps_flag = false;
+                tick({ "", "" }, state, stack, alphabet, E, tree, eps_flag);
+                tick(symb, state, stack, alphabet, E, tree, eps_flag);
+            }
+        }
+        else {
+            eps_flag = false;
+            tick({ "", "" }, state, stack, alphabet, E, tree, eps_flag);
+            tick(symb, state, stack, alphabet, E, tree, eps_flag);
+        }
     }
     else if (heh.first == "s") {
         stack.push_back(numerate(symb));
@@ -342,6 +184,190 @@ void tree_print(vector<pair<Lexem, int>>& node, map<pair<Lexem, int>, vector<pai
     }
 }
 
+void translator(pair<Lexem, int>& node, map<pair<Lexem, int>, vector<pair<Lexem, int>>>& tree, vector<string>& t, vector<string>& atoms) {
+    string temp = node.first.first;
+    if (temp == "e") {
+        translator(tree[node][0], tree, t, atoms);
+        atoms.push_back("(OUT,,,t" + to_string(temp_counter) + ")");
+    }
+    else if (temp == "E") {
+        translator(tree[node][0], tree, t, atoms);
+    }
+    else if (temp == "E7") {
+        if (int(tree[node].size()) > 1) {
+            translator(tree[node][0], tree, t, atoms);
+            string temp1 = "(OR,t" + to_string(temp_counter) + ",";
+            translator(tree[node][2], tree, t, atoms);
+            temp1.append("t" + to_string(temp_counter) + ",t" + to_string(temp_counter + 1) + ")");
+            temp_counter++;
+            atoms.push_back(temp1);
+        }
+        else {
+            translator(tree[node][0], tree, t, atoms);
+        }
+    }
+    else if (temp == "E6") {
+        if (int(tree[node].size()) > 1) {
+            translator(tree[node][0], tree, t, atoms);
+            string temp1 = "(AND,t" + to_string(temp_counter) + ",";
+            translator(tree[node][2], tree, t, atoms);
+            temp1.append("t" + to_string(temp_counter) + ",t" + to_string(temp_counter + 1) + ")");
+            temp_counter++;
+            atoms.push_back(temp1);
+        }
+        else {
+            translator(tree[node][0], tree, t, atoms);
+        }
+    }
+    else if (temp == "E5") {
+        if (int(tree[node].size()) > 1) {
+            if (tree[node][1].first.first == "opeq") {
+                translator(tree[node][0], tree, t, atoms);
+                string temp1 = "(EQ,t" + to_string(temp_counter) + ",";
+                translator(tree[node][2], tree, t, atoms);
+                temp1.append("t" + to_string(temp_counter) + ",t" + to_string(label_counter) + ")");
+                temp_counter++;
+                atoms.push_back("(MOV,1,,t" + to_string(temp_counter) + ")");
+                atoms.push_back(temp1);
+                atoms.push_back("(MOV,0,,t" + to_string(temp_counter) + ")");
+                atoms.push_back("(LBL,,," + to_string(label_counter) + ")");
+                label_counter++;
+            }
+            else if (tree[node][1].first.first == "opne") {
+                translator(tree[node][0], tree, t, atoms);
+                string temp1 = "(NE,t" + to_string(temp_counter) + ",";
+                translator(tree[node][2], tree, t, atoms);
+                temp1.append("t" + to_string(temp_counter) + ",t" + to_string(label_counter) + ")");
+                temp_counter++;
+                atoms.push_back("(MOV,1,,t" + to_string(temp_counter) + ")");
+                atoms.push_back(temp1);
+                atoms.push_back("(MOV,0,,t" + to_string(temp_counter) + ")");
+                atoms.push_back("(LBL,,," + to_string(label_counter) + ")");
+                label_counter++;
+            }
+            else if (tree[node][1].first.first == "opgt") {
+                translator(tree[node][0], tree, t, atoms);
+                string temp1 = "(GT,t" + to_string(temp_counter) + ",";
+                translator(tree[node][2], tree, t, atoms);
+                temp1.append("t" + to_string(temp_counter) + ",t" + to_string(label_counter) + ")");
+                temp_counter++;
+                atoms.push_back("(MOV,1,,t" + to_string(temp_counter) + ")");
+                atoms.push_back(temp1);
+                atoms.push_back("(MOV,0,,t" + to_string(temp_counter) + ")");
+                atoms.push_back("(LBL,,," + to_string(label_counter) + ")");
+                label_counter++;
+            }
+            else if (tree[node][1].first.first == "oplt") {
+                translator(tree[node][0], tree, t, atoms);
+                string temp1 = "(GT,t" + to_string(temp_counter) + ",";
+                translator(tree[node][2], tree, t, atoms);
+                temp1.append("t" + to_string(temp_counter) + ",t" + to_string(label_counter) + ")");
+                temp_counter++;
+                atoms.push_back("(MOV,1,,t" + to_string(temp_counter) + ")");
+                atoms.push_back(temp1);
+                atoms.push_back("(MOV,0,,t" + to_string(temp_counter) + ")");
+                atoms.push_back("(LBL,,," + to_string(label_counter) + ")");
+                label_counter++;
+            }
+            else if (tree[node][1].first.first == "ople") {
+                translator(tree[node][0], tree, t, atoms);
+                string temp1 = "(LE,t" + to_string(temp_counter) + ",";
+                translator(tree[node][2], tree, t, atoms);
+                temp1.append("t" + to_string(temp_counter) + ",t" + to_string(label_counter) + ")");
+                temp_counter++;
+                atoms.push_back("(MOV,1,,t" + to_string(temp_counter) + ")");
+                atoms.push_back(temp1);
+                atoms.push_back("(MOV,0,,t" + to_string(temp_counter) + ")");
+                atoms.push_back("(LBL,,," + to_string(label_counter) + ")");
+                label_counter++;
+            }
+        }
+        else {
+            translator(tree[node][0], tree, t, atoms);
+        }
+    }
+    else if (temp == "E4") {
+        if (int(tree[node].size()) > 1) {
+            if (tree[node][1].first.first == "opplus") {
+                translator(tree[node][0], tree, t, atoms);
+                string temp1 = "(ADD,t" + to_string(temp_counter) + ",";
+                translator(tree[node][2], tree, t, atoms);
+                temp1.append("t" + to_string(temp_counter) + ",t" + to_string(temp_counter + 1) + ")");
+                atoms.push_back(temp1);
+                temp_counter++;
+            }
+            else if (tree[node][1].first.first == "opminus") {
+                translator(tree[node][0], tree, t, atoms);
+                string temp1 = "(SUB,t" + to_string(temp_counter) + ",";
+                translator(tree[node][2], tree, t, atoms);
+                temp1.append("t" + to_string(temp_counter) + ",t" + to_string(temp_counter + 1) + ")");
+                atoms.push_back(temp1);
+                temp_counter++;
+            }
+        }
+        else {
+            translator(tree[node][0], tree, t, atoms);
+        }
+    }
+    else if (temp == "E3") {
+        if (int(tree[node].size()) > 1) {
+            if (tree[node][1].first.first == "opmul") {
+                translator(tree[node][0], tree, t, atoms);
+                string temp1 = "(MUL,t" + to_string(temp_counter) + ",";
+                translator(tree[node][2], tree, t, atoms);
+                temp1.append("t" + to_string(temp_counter) + ",t" + to_string(temp_counter + 1) + ")");
+                atoms.push_back(temp1);
+                temp_counter++;
+            }
+        }
+        else {
+            translator(tree[node][0], tree, t, atoms);
+        }
+    }
+    else if (temp == "E2") {
+        if (int(tree[node].size()) > 1) {
+            if (tree[node][0].first.first == "opnot") {
+                translator(tree[node][1], tree, t, atoms);
+                atoms.push_back("(NOT,t" + to_string(temp_counter) + ",,t" + to_string(temp_counter + 1) + ")");
+                temp_counter++;
+            }
+        }
+        else {
+            translator(tree[node][0], tree, t, atoms);
+        }
+    }
+    else if (temp == "E1") {
+        if (tree[node][0].first.first == "opinc") {
+            temp_counter++;
+            atoms.push_back("(ADD," + tree[node][1].first.second + ",1," + tree[node][1].first.second);
+            atoms.push_back("(MOV," + tree[node][0].first.second + ",,t" + to_string(temp_counter) + ")");
+        }
+        else if (tree[node][0].first.first == "lpar") {
+            translator(tree[node][1], tree, t, atoms);
+        }
+        else if (tree[node][0].first.first == "num") {
+            temp_counter++;
+            atoms.push_back("(MOV," + tree[node][0].first.second + ",,t" + to_string(temp_counter) + ")");
+        }
+        else if (tree[node][0].first.first == "id") {
+            if (int(tree[node].size()) > 1) {
+                if (tree[node][1].first.first == "opinc") {
+                    temp_counter++;
+                    atoms.push_back("(MOV," + tree[node][0].first.second + ",,t" + to_string(temp_counter) + ")");
+                    atoms.push_back("(ADD," + tree[node][1].first.second + ",1," + tree[node][1].first.second);
+                }
+                else {
+
+                }
+            }
+            else {
+                temp_counter++;
+                atoms.push_back("(MOV," + tree[node][0].first.second + ",,t" + to_string(temp_counter) + ")");
+            }
+        }
+    }
+}
+
 int main()
 {
     /*
@@ -357,93 +383,90 @@ int main()
             { "rbrace", "" },
             { "end", "" }
     };*/
-    vector<string> term = {"opplus", "id", "num", "end"};
-    vector<string> non_term = { "e", "E", "E'" };
-    vector<string> alphabet = { "opplus", "id", "num", "end", "e", "E", "E'"};
-    vector<Rule> grammar = {
-        {"e", {"E"}},
-        {"E", {"E", "opplus", "E'"}},
-        {"E", {"E'"}},
-        {"E'", {"id"}},
-        {"E'", {"num"}}
-    };
-    map<string, set<string>> F = FirstForG(grammar, term);
-    set<pair<Rule, string>> start = { { { "e", {".", "E"}}, "end"}};
-    set<set<pair<Rule, string>>> I;
-    I.insert(Closure(grammar, F, term, start));
-    set<set<pair<Rule, string>>> C = items(I, grammar, F, alphabet, term);
-    vector<set<pair<Rule, string>>> e;
-    int counter = 0;
-    for (auto& x : C) {
-        e.push_back(x);
-    }
-    int am_i = int(e.size());
-    int len_alph = int(alphabet.size());
+    vector<string> term;
+    vector<string> non_term;
+    vector<string> alphabet;
+    vector<Rule> grammar;
+    filebuf fb1;
     vector<vector<pair<string, pair<int, Rule>>>> E;
-    for (int i = 0; i < am_i; i++) {
-        E.push_back({});
-        for (int j = 0; j < len_alph; j++) {
-            E[i].push_back({ "", { -1, {}} });
+    if (fb1.open("table.txt", ios::in)) {
+        istream is1(&fb1);
+        Lexer lex1(is1);
+        string a = lex1.getNextLexem().second;
+        int A = stoi(a);
+        string b = lex1.getNextLexem().second;
+        int B = stoi(b);
+        string sts = lex1.getNextLexem().second;
+        int states = stoi(sts);
+        for (int i = 0; i < A; i++) {
+            string temp = lex1.getNextLexem().second;
+            non_term.push_back(temp);
+            alphabet.push_back(temp);
         }
-    }
-
-    for (int i = 0; i < am_i; i++) {
-        for (auto& x : e[i]) {
-            int flag = 0;
-            string t;
-            for (auto& y : x.first.second) {
-                if (flag == 0 && y == ".") {
-                    flag = 1;
-                }
-                else if (flag == 1) {
-                    t = y;
-                    flag = 2;
-                    break;
-                }
-            }
-            if (flag == 2) {
-                if (find(term.begin(), term.end(), t) != term.end()) {
-                    auto it = find(e.begin(), e.end(), GoTo(e[i], t, grammar, F, term));
-                    int id = int(distance(e.begin(), it));
-                    auto it1 = find(alphabet.begin(), alphabet.end(), t);
-                    int term_id = int(distance(alphabet.begin(), it1));
-                    E[i][term_id] = { "s", {id, {}} };
-                }
-            }
-            else {
-                if (x.first.first != starting_symb) {
-                    auto it1 = find(alphabet.begin(), alphabet.end(), x.second);
-                    int term_id = int(distance(alphabet.begin(), it1));
-                    E[i][term_id] = { "r", { -2, x.first} };
+        for (int i = 0; i < B; i++) {
+            string temp = lex1.getNextLexem().second;
+            alphabet.push_back(temp);
+            term.push_back(temp);
+        }
+        for (int i = 0; i < states; i++) {
+            E.push_back({});
+            for (int j = 0; j < A + B; j++) {
+                E[i].push_back({});
+                if (j < A) {
+                    string temp = lex1.getNextLexem().second;
+                    E[i][j] = { "", {stoi(temp), {}} };
                 }
                 else {
-                    auto it1 = find(alphabet.begin(), alphabet.end(), x.second);
-                    int term_id = int(distance(alphabet.begin(), it1));
-                    E[i][term_id] = { "acc", { -2, {}} };
+                    string temp = lex1.getNextLexem().second;
+                    if (temp != "r" && temp != "s" && temp != "acc") {
+                        E[i][j] = { "", {stoi(temp), {}} };
+                    }
+                    else if (temp == "s" || temp == "acc") {
+                        E[i][j] = { temp, {stoi(lex1.getNextLexem().second), {}} };
+                    }
+                    else {
+                        int st = stoi(lex1.getNextLexem().second);
+                        Rule temp_r;
+                        temp_r.first = lex1.getNextLexem().second;
+                        temp = lex1.getNextLexem().second;
+                        while (temp != ".") {
+                            temp_r.second.push_back(temp);
+                            temp = lex1.getNextLexem().second;
+                        }
+                        E[i][j] = { "r", {st, temp_r} };
+                    }
                 }
             }
         }
-        for (auto& y : non_term) {
-            auto temp = GoTo(e[i], y, grammar, F, term);
-            if (!temp.empty()){
-                auto it = find(e.begin(), e.end(), temp);
-                int id = int(distance(e.begin(), it));
-                auto it1 = find(alphabet.begin(), alphabet.end(), y);
-                int term_id = int(distance(alphabet.begin(), it1));
-                E[i][term_id] = { "", {id, {}} };
-            }
-        }
     }
+    /*for (auto& x : E) {
+        for (auto& y : x) {
+            if (!y.first.empty()) {
+                cout << y.first << " ";
+            }
+            cout << y.second.first;
+            if (y.first == "r") {
+                cout << " " << y.second.second.first;
+                for (auto& c : y.second.second.second) {
+                    cout << " " << c;
+                }
+                cout << " ";
+            }
+            cout << " ";
+        }
+        cout << endl;
+    }*/
     filebuf fb;
     map<pair<Lexem, int>, vector<pair<Lexem, int>>> tree;
     vector<int> state = { 0 };
     vector<pair<Lexem, int>> stack;
     if (fb.open("test.txt", ios::in)) {
+        bool eps = false;
         istream is(&fb);
         Lexer lex(is);
         while (is) {
             Lexem l = lex.getNextLexem();
-            tick(l, state, stack, alphabet, E, tree);
+            tick(l, state, stack, alphabet, E, tree, eps);
             if (l == LEX_EOF) {
                 break;
             }
@@ -451,7 +474,8 @@ int main()
         fb.close();
     }
     while (!stack.empty()) {
-        tick({ "", "" }, state, stack, alphabet, E, tree);
+        bool eps = false;
+        tick({"", ""}, state, stack, alphabet, E, tree, eps);
     }
     cout << endl;
     /*for (auto& x : tree) {
@@ -464,4 +488,9 @@ int main()
     vector<bool> son;
     vector<pair<Lexem, int>> start_node = { { {starting_symb, ""}, -1}};
     tree_print(start_node, tree, son, term);
+    vector<string> atoms;
+    translator(start_node[0], tree, term, atoms);
+    for (auto i = atoms.begin(); i != atoms.end(); i++) {
+        cout << endl << *i;
+    }
 }
