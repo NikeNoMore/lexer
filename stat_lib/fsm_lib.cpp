@@ -79,7 +79,7 @@ map<int, vector<E>> G = {
 {12, {E("&", true, false, 13, no_lexem),
     E(other, false, false, -1, "error")}},
 
-{13, {E(other, false, false, 3, "opand")}},
+{13, {E(other, false, false, 0, "opand")}},
 
 {14, {E(s_quote, true, false, -1, "error"),
     E(other, true, true, 16, no_lexem)}},

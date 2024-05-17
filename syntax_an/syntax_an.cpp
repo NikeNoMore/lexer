@@ -13,15 +13,22 @@ map<string, int> num_nodes;
 string starting_symb = "e";
 int temp_counter = 0;
 int label_counter = 1;
+int numb = 0;
 
 pair<Lexem, int> numerate(Lexem& lex) {
-    if (num_nodes.contains(lex.first)) {
-        num_nodes[lex.first]++;
+    if (lex.first != "id") {
+        if (num_nodes.contains(lex.first)) {
+            num_nodes[lex.first]++;
+        }
+        else {
+            num_nodes[lex.first] = 0;
+        }
+        return { lex, num_nodes[lex.first] };
     }
     else {
-        num_nodes[lex.first] = 0;
+        numb++;
+        return { lex, numb };
     }
-    return { lex, num_nodes[lex.first]};
 }
 
 void tick(Lexem symb, vector<int>& state, vector<pair<Lexem, int>>& stack, vector<string>& alphabet, vector<vector<pair<string, pair<int, Rule>>>>& E, map<pair<Lexem, int>, vector<pair<Lexem, int>>>& tree, bool& eps_flag) {
@@ -140,12 +147,12 @@ void tree_print(vector<pair<Lexem, int>>& node, map<pair<Lexem, int>, vector<pai
         cout << " ";
     }
     a--;
-    end = int(tree[node[a]].size());
+    end = int(tree[node[a]].size()) - 1;
     bool flag = false;
     if (find(t.begin(), t.end(), node[a].first.first) == t.end()) {
         flag = true;
     }
-    for (int i = 0; i < end; i++) {
+    for (int i = end; i >= 0; i--) {
         if (!flag) {
             Lexem temp;
             temp = tree[node[a]][i].first;
@@ -162,8 +169,8 @@ void tree_print(vector<pair<Lexem, int>>& node, map<pair<Lexem, int>, vector<pai
             temp.push_back(tree[node[a]][i]);
             if (find(t.begin(), t.end(), tree[node[a]][i].first.first) != t.end()) {
                 while (find(t.begin(), t.end(), tree[node[a]][i].first.first) != t.end()) {
-                    if (tree[node[a]][i] != *tree[node[a]].rbegin()) {
-                        i++;
+                    if (tree[node[a]][i] != *tree[node[a]].begin()) {
+                        i--;
                         temp.push_back(tree[node[a]][i]);
                     }
                     else {
@@ -171,7 +178,7 @@ void tree_print(vector<pair<Lexem, int>>& node, map<pair<Lexem, int>, vector<pai
                     }
                 }
             }
-            if (i != end - 1) {
+            if (i != 0) {
                 son.push_back(true);
             }
             else {
