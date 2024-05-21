@@ -10,6 +10,7 @@ using namespace std;
 using Lexem = pair<string, string>;
 using Rule = pair<string, vector<string>>;
 map<string, int> num_nodes;
+//string starting_symb = "d";
 string starting_symb = "e";
 int temp_counter = 0;
 int label_counter = 1;

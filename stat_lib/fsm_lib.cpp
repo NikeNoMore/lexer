@@ -138,7 +138,7 @@ pair<int, Lexem> tick(int state, istream& stream, char& cache, string& memory) {
         return { state, Lexem{action.lexem, memory } };
     }
     else if (keyword.contains(memory)) {
-        return { state, Lexem{ "kw", memory } };
+        return { state, Lexem{ "kw" + memory, memory } };
     }
     else {
         return { state, Lexem{ action.lexem, memory } };
