@@ -72,7 +72,7 @@ map<int, vector<E>> G = {
 {9, {E(other, false , false, 0, "opinc")}},
 
 {10, {E("|", true, false, 11, no_lexem),
-    E(other, false, false, -1, "error")}},
+    E(other, false, false, 0, "bar")}},
 
 {11, {E(other, false, false, 0, "opor")}},
 

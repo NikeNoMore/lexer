@@ -130,6 +130,11 @@
   <ItemGroup>
     <ClCompile Include="preproc.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\stat_lib\stat_lib.vcxproj">
+      <Project>{bb74fae8-6ec2-4372-b113-7b3bd8c9f9d3}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

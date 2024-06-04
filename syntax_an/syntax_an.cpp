@@ -12,9 +12,9 @@ using Rule = pair<string, vector<string>>;
 map<string, int> num_nodes;
 //string starting_symb = "d";
 string starting_symb = "e";
-int temp_counter = 0;
 int label_counter = 1;
 int numb = 0;
+map<int, string> symb_tab;
 
 pair<Lexem, int> numerate(Lexem& lex) {
     if (lex.first != "id") {
@@ -28,6 +28,7 @@ pair<Lexem, int> numerate(Lexem& lex) {
     }
     else {
         numb++;
+        symb_tab[numb] = lex.second;
         return { lex, numb };
     }
 }
@@ -196,7 +197,7 @@ void translator(pair<Lexem, int>& node, map<pair<Lexem, int>, vector<pair<Lexem,
     string temp = node.first.first;
     if (temp == "e") {
         translator(tree[node][0], tree, t, atoms);
-        atoms.push_back("(OUT,,,t" + to_string(temp_counter) + ")");
+        atoms.push_back("(OUT,,,[" + to_string(numb) + "])");
     }
     else if (temp == "E") {
         translator(tree[node][0], tree, t, atoms);
@@ -204,10 +205,10 @@ void translator(pair<Lexem, int>& node, map<pair<Lexem, int>, vector<pair<Lexem,
     else if (temp == "E7") {
         if (int(tree[node].size()) > 1) {
             translator(tree[node][2], tree, t, atoms);
-            string temp1 = "(OR,t" + to_string(temp_counter) + ",";
+            string temp1 = "(OR,[" + to_string(numb) + "],";
             translator(tree[node][0], tree, t, atoms);
-            temp1.append("t" + to_string(temp_counter) + ",t" + to_string(temp_counter + 1) + ")");
-            temp_counter++;
+            temp1.append("[" + to_string(numb) + "],[" + to_string(numb + 1) + "])");
+            numb++;
             atoms.push_back(temp1);
         }
         else {
@@ -217,10 +218,10 @@ void translator(pair<Lexem, int>& node, map<pair<Lexem, int>, vector<pair<Lexem,
     else if (temp == "E6") {
         if (int(tree[node].size()) > 1) {
             translator(tree[node][2], tree, t, atoms);
-            string temp1 = "(AND,t" + to_string(temp_counter) + ",";
+            string temp1 = "(AND,[" + to_string(numb) + "],[";
             translator(tree[node][0], tree, t, atoms);
-            temp1.append("t" + to_string(temp_counter) + ",t" + to_string(temp_counter + 1) + ")");
-            temp_counter++;
+            temp1.append(to_string(numb) + "],[" + to_string(numb + 1) + "])");
+            numb++;
             atoms.push_back(temp1);
         }
         else {
@@ -231,62 +232,62 @@ void translator(pair<Lexem, int>& node, map<pair<Lexem, int>, vector<pair<Lexem,
         if (int(tree[node].size()) > 1) {
             if (tree[node][1].first.first == "opeq") {
                 translator(tree[node][2], tree, t, atoms);
-                string temp1 = "(EQ,t" + to_string(temp_counter) + ",";
+                string temp1 = "(EQ,[" + to_string(numb) + "],";
                 translator(tree[node][0], tree, t, atoms);
-                temp1.append("t" + to_string(temp_counter) + "," + to_string(label_counter) + ")");
-                temp_counter++;
-                atoms.push_back("(MOV,1,,t" + to_string(temp_counter) + ")");
+                temp1.append("[" + to_string(numb) + ",L" + to_string(label_counter) + ")");
+                numb++;
+                atoms.push_back("(MOV,1,,[" + to_string(numb) + "])");
                 atoms.push_back(temp1);
-                atoms.push_back("(MOV,0,,t" + to_string(temp_counter) + ")");
-                atoms.push_back("(LBL,,," + to_string(label_counter) + ")");
+                atoms.push_back("(MOV,0,,[" + to_string(numb) + "])");
+                atoms.push_back("(LBL,,,L" + to_string(label_counter) + ")");
                 label_counter++;
             }
             else if (tree[node][1].first.first == "opne") {
                 translator(tree[node][2], tree, t, atoms);
-                string temp1 = "(NE,t" + to_string(temp_counter) + ",";
+                string temp1 = "(NE,[" + to_string(numb) + "],";
                 translator(tree[node][0], tree, t, atoms);
-                temp1.append("t" + to_string(temp_counter) + "," + to_string(label_counter) + ")");
-                temp_counter++;
-                atoms.push_back("(MOV,1,,t" + to_string(temp_counter) + ")");
+                temp1.append("[" + to_string(numb) + "],L" + to_string(label_counter) + ")");
+                numb++;
+                atoms.push_back("(MOV,1,,[" + to_string(numb) + "])");
                 atoms.push_back(temp1);
-                atoms.push_back("(MOV,0,,t" + to_string(temp_counter) + ")");
-                atoms.push_back("(LBL,,," + to_string(label_counter) + ")");
+                atoms.push_back("(MOV,0,,[" + to_string(numb) + "])");
+                atoms.push_back("(LBL,,,L" + to_string(label_counter) + ")");
                 label_counter++;
             }
             else if (tree[node][1].first.first == "opgt") {
                 translator(tree[node][2], tree, t, atoms);
-                string temp1 = "(GT,t" + to_string(temp_counter) + ",";
+                string temp1 = "(GT,[" + to_string(numb) + "],";
                 translator(tree[node][0], tree, t, atoms);
-                temp1.append("t" + to_string(temp_counter) + "," + to_string(label_counter) + ")");
-                temp_counter++;
-                atoms.push_back("(MOV,1,,t" + to_string(temp_counter) + ")");
+                temp1.append("[" + to_string(numb) + "],L" + to_string(label_counter) + ")");
+                numb++;
+                atoms.push_back("(MOV,1,,[" + to_string(numb) + "])");
                 atoms.push_back(temp1);
-                atoms.push_back("(MOV,0,,t" + to_string(temp_counter) + ")");
-                atoms.push_back("(LBL,,," + to_string(label_counter) + ")");
+                atoms.push_back("(MOV,0,,[" + to_string(numb) + "])");
+                atoms.push_back("(LBL,,,L" + to_string(label_counter) + ")");
                 label_counter++;
             }
             else if (tree[node][1].first.first == "oplt") {
                 translator(tree[node][2], tree, t, atoms);
-                string temp1 = "(GT,t" + to_string(temp_counter) + ",";
+                string temp1 = "(LT,[" + to_string(numb) + "],";
                 translator(tree[node][0], tree, t, atoms);
-                temp1.append("t" + to_string(temp_counter) + "," + to_string(label_counter) + ")");
-                temp_counter++;
-                atoms.push_back("(MOV,1,,t" + to_string(temp_counter) + ")");
+                temp1.append("[" + to_string(numb) + "],L" + to_string(label_counter) + ")");
+                numb++;
+                atoms.push_back("(MOV,1,,[" + to_string(numb) + "])");
                 atoms.push_back(temp1);
-                atoms.push_back("(MOV,0,,t" + to_string(temp_counter) + ")");
-                atoms.push_back("(LBL,,," + to_string(label_counter) + ")");
+                atoms.push_back("(MOV,0,,[" + to_string(numb) + "])");
+                atoms.push_back("(LBL,,,L" + to_string(label_counter) + ")");
                 label_counter++;
             }
             else if (tree[node][1].first.first == "ople") {
                 translator(tree[node][2], tree, t, atoms);
-                string temp1 = "(LE,t" + to_string(temp_counter) + ",";
+                string temp1 = "(LE,[" + to_string(numb) + "],";
                 translator(tree[node][0], tree, t, atoms);
-                temp1.append("t" + to_string(temp_counter) + "," + to_string(label_counter) + ")");
-                temp_counter++;
-                atoms.push_back("(MOV,1,,t" + to_string(temp_counter) + ")");
+                temp1.append("[" + to_string(numb) + "],L" + to_string(label_counter) + ")");
+                numb++;
+                atoms.push_back("(MOV,1,,[" + to_string(numb) + "])");
                 atoms.push_back(temp1);
-                atoms.push_back("(MOV,0,,t" + to_string(temp_counter) + ")");
-                atoms.push_back("(LBL,,," + to_string(label_counter) + ")");
+                atoms.push_back("(MOV,0,,[" + to_string(numb) + "])");
+                atoms.push_back("(LBL,,,L" + to_string(label_counter) + ")");
                 label_counter++;
             }
         }
@@ -298,19 +299,19 @@ void translator(pair<Lexem, int>& node, map<pair<Lexem, int>, vector<pair<Lexem,
         if (int(tree[node].size()) > 1) {
             if (tree[node][1].first.first == "opplus") {
                 translator(tree[node][2], tree, t, atoms);
-                string temp1 = "(ADD,t" + to_string(temp_counter) + ",";
+                string temp1 = "(ADD,[" + to_string(numb) + "],";
                 translator(tree[node][0], tree, t, atoms);
-                temp1.append("t" + to_string(temp_counter) + ",t" + to_string(temp_counter + 1) + ")");
+                temp1.append("[" + to_string(numb) + "],[" + to_string(numb + 1) + "])");
                 atoms.push_back(temp1);
-                temp_counter++;
+                numb++;
             }
             else if (tree[node][1].first.first == "opminus") {
                 translator(tree[node][2], tree, t, atoms);
-                string temp1 = "(SUB,t" + to_string(temp_counter) + ",";
+                string temp1 = "(SUB,[" + to_string(numb) + "],";
                 translator(tree[node][0], tree, t, atoms);
-                temp1.append("t" + to_string(temp_counter) + ",t" + to_string(temp_counter + 1) + ")");
+                temp1.append("[" + to_string(numb) + "],[" + to_string(numb + 1) + "])");
                 atoms.push_back(temp1);
-                temp_counter++;
+                numb++;
             }
         }
         else {
@@ -321,11 +322,11 @@ void translator(pair<Lexem, int>& node, map<pair<Lexem, int>, vector<pair<Lexem,
         if (int(tree[node].size()) > 1) {
             if (tree[node][1].first.first == "opmul") {
                 translator(tree[node][2], tree, t, atoms);
-                string temp1 = "(MUL,t" + to_string(temp_counter) + ",";
+                string temp1 = "(MUL,[t]" + to_string(numb) + "],";
                 translator(tree[node][0], tree, t, atoms);
-                temp1.append("t" + to_string(temp_counter) + ",t" + to_string(temp_counter + 1) + ")");
+                temp1.append("[" + to_string(numb) + "],[" + to_string(numb + 1) + "])");
                 atoms.push_back(temp1);
-                temp_counter++;
+                numb++;
             }
         }
         else {
@@ -336,8 +337,8 @@ void translator(pair<Lexem, int>& node, map<pair<Lexem, int>, vector<pair<Lexem,
         if (int(tree[node].size()) > 1) {
             if (tree[node][1].first.first == "opnot") {
                 translator(tree[node][0], tree, t, atoms);
-                atoms.push_back("(NOT,t" + to_string(temp_counter) + ",,t" + to_string(temp_counter + 1) + ")");
-                temp_counter++;
+                atoms.push_back("(NOT,[" + to_string(numb) + "],,[" + to_string(numb + 1) + "])");
+                numb++;
             }
         }
         else {
@@ -346,25 +347,25 @@ void translator(pair<Lexem, int>& node, map<pair<Lexem, int>, vector<pair<Lexem,
     }
     else if (temp == "E1") {
         if (tree[node][0].first.first == "opinc") {
-            temp_counter++;
-            atoms.push_back("(MOV," + tree[node][1].first.second + ",,t" + to_string(temp_counter) + ")");
-            atoms.push_back("(ADD," + tree[node][1].first.second + ",1," + tree[node][1].first.second);
+            numb++;
+            atoms.push_back("(MOV,[" + to_string(tree[node][1].second) + "],,[" + to_string(numb) + "])");
+            atoms.push_back("(ADD,[" + to_string(tree[node][1].second) + "],1,[" + to_string(tree[node][1].second) + "])");
         }
         else if (tree[node][0].first.first == "num") {
-            temp_counter++;
-            atoms.push_back("(MOV," + tree[node][0].first.second + ",,t" + to_string(temp_counter) + ")");
+            numb++;
+            atoms.push_back("(MOV,[" + to_string(tree[node][0].second) + "],,[" + to_string(numb) + "])");
         }
         else if (tree[node][0].first.first == "id") {
             if (int(tree[node].size()) > 1) {
                 if (tree[node][1].first.first == "opinc") {
-                    temp_counter++;
-                    atoms.push_back("(ADD," + tree[node][0].first.second + ",1," + tree[node][0].first.second);
-                    atoms.push_back("(MOV," + tree[node][0].first.second + ",,t" + to_string(temp_counter) + ")");
+                    numb++;
+                    atoms.push_back("(ADD,[" + to_string(tree[node][0].second) + "],1,[" + to_string(tree[node][0].second) + "])");
+                    atoms.push_back("(MOV,[" + to_string(tree[node][0].second) + "],,[" + to_string(numb) + "])");
                 }
             }
             else {
-                temp_counter++;
-                atoms.push_back("(MOV," + tree[node][0].first.second + ",,t" + to_string(temp_counter) + ")");
+                numb++;
+                atoms.push_back("(MOV,[" + to_string(tree[node][0].second) + "],,[" + to_string(numb) + "])");
             }
         }
         else if (tree[node][2].first.first == "lpar" && int(tree[node].size()) == 3) {
@@ -372,21 +373,21 @@ void translator(pair<Lexem, int>& node, map<pair<Lexem, int>, vector<pair<Lexem,
         }
         else if (tree[node][3].first.first == "id") {
             translator(tree[node][1], tree, t, atoms);
-            temp_counter++;
-            atoms.push_back("(CALL," + tree[node][3].first.second + ",,t" + to_string(temp_counter) + ")");
+            numb++;
+            atoms.push_back("(CALL,[" + to_string(tree[node][3].second) + "],,[" + to_string(numb) + "])");
         }
     }
     else if (temp == "ArgList") {
         if (!tree[node].empty()) {
             translator(tree[node][1], tree, t, atoms);
-            atoms.push_back("(PARAM,,,t" + to_string(temp_counter) + ")");
+            atoms.push_back("(PARAM,,,[" + to_string(numb) + "])");
             translator(tree[node][0], tree, t, atoms);
         }
     }
     else if (temp == "ArgList_") {
         if (!tree[node].empty()) {
             translator(tree[node][1], tree, t, atoms);
-            atoms.push_back("(PARAM,,,t" + to_string(temp_counter) + ")");
+            atoms.push_back("(PARAM,,,[" + to_string(numb) + "])");
             translator(tree[node][0], tree, t, atoms);
         }
     }
@@ -513,7 +514,20 @@ int main()
     vector<pair<Lexem, int>> start_node = { { {starting_symb, ""}, -1}};
     tree_print(start_node, tree, son, term);
     vector<string> atoms;
+    int id_end = numb;
+    numb++;
     translator(start_node[0], tree, term, atoms);
+    int t_count = 0;
+    cout << endl << endl << "Table of symbols:" << endl;
+    for (int i = 1; i <= numb; i++) {
+        if (i <= id_end) {
+            cout << i << " : " << symb_tab[i] << endl;
+        }
+        else {
+            t_count++;
+            cout << i << " : " << "t" + to_string(t_count) << endl;
+        }
+    }
     for (auto i = atoms.begin(); i != atoms.end(); i++) {
         cout << endl << *i;
     }

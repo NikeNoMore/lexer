@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include "../stat_lib/lexer_frm.h"
 #include <vector>
 #include <string>
 #include <map>
@@ -14,6 +15,87 @@ map<string, int> num_nodes;
 string starting_symb = "e";
 vector<string> eps;
 map<set<pair<Rule, string>>, map<string, set<pair<Rule, string>>>> items_goto;
+int backup_counter = 1;
+
+void unpack(set<set<pair<Rule, string>>>& I) {
+    filebuf fb1;
+    if (fb1.open("backup.txt", ios::in)) {
+        istream is(&fb1);
+        Lexer lex(is);
+        int n = stoi(lex.getNextLexem().second);
+        for (int i = 0; i < n; i++) {
+            Lexem tmp = lex.getNextLexem();
+            set<pair<Rule, string>> init_set;
+            while (tmp.first != "colon") {
+                Rule tmp_rule;
+                tmp_rule.first = tmp.second;
+                while (tmp.first != "bar") {
+                    tmp = lex.getNextLexem();
+                    if (tmp.first != "bar") {
+                        tmp_rule.second.push_back(tmp.second);
+                    }
+                }
+                tmp = lex.getNextLexem();
+                init_set.insert({ tmp_rule, tmp.second });
+                tmp = lex.getNextLexem();
+                tmp = lex.getNextLexem();
+            }
+            I.insert(init_set);
+            tmp = lex.getNextLexem();
+            while (tmp.first != "semicolon") {
+                string letter = tmp.second;
+                set<pair<Rule, string>> tmp_set;
+                lex.getNextLexem();
+                tmp = lex.getNextLexem();
+                while (tmp.first != "opor") {
+                    Rule tmp_rule;
+                    tmp_rule.first = tmp.second;
+                    while (tmp.first != "bar") {
+                        tmp = lex.getNextLexem();
+                        if (tmp.first != "bar") {
+                            tmp_rule.second.push_back(tmp.second);
+                        }
+                    }
+                    tmp = lex.getNextLexem();
+                    tmp_set.insert({ tmp_rule, tmp.second });
+                    tmp = lex.getNextLexem();
+                    tmp = lex.getNextLexem();
+                }
+                items_goto[init_set][letter] = tmp_set;
+                I.insert(tmp_set);
+                tmp = lex.getNextLexem();
+            }
+        }
+    }
+}
+
+void backup() {
+    ofstream back;
+    back.open("backup.txt");
+    back << int(items_goto.size()) << endl;
+    for (auto& x : items_goto) {
+        for (auto& y : x.first) {
+            back << y.first.first << " ";
+            for (auto& z : y.first.second) {
+                back << z << " ";
+            }
+            back << "| " << y.second << " || ";
+        }
+        back << ": ";
+        for (auto& y : x.second) {
+            back << y.first << " | ";
+            for (auto& z : y.second) {
+                back << z.first.first << " | ";
+                for (auto& q : z.first.second) {
+                    back << q << " ";
+                }
+                back << "| " << z.second << " | ";
+            }
+            back << "|| ";
+        }
+        back << ";" << endl << endl;
+    }
+}
 
 map<string, set<string>> FirstForG(vector<Rule>& G, vector<string>& t) {
     map<string, set<string>> res;
@@ -215,9 +297,12 @@ set<set<pair<Rule, string>>> items(set<set<pair<Rule, string>>>& I, vector<Rule>
                     if (!temp.empty()) {
                         C.insert(temp);
                         items_goto[x][y] = temp;
-
-                    } 
+                    }
                 }
+                backup_counter++;
+            }
+            if (backup_counter % 100 == 0) {
+                backup();
             }
         }
         if (size_prev != C.size()) {
@@ -283,7 +368,7 @@ int main()
     vector<string> alphabet = { "d", "IfOp", "Matched", "Unmatched", "id", "lpar", "rpar", "kwif", "kwelse", "lbrace", "rbrace", "end" };*/
 
 
-   /* vector<string> term = { "comma", "rpar", "lpar", "opinc", "opnot", "opmul", "opminus", "ople", "opgt", "oplt", "opne", "opeq", "opand", "opor", "opplus", "id", "num",
+   /*vector<string> term = { "comma", "rpar", "lpar", "opinc", "opnot", "opmul", "opminus", "ople", "opgt", "oplt", "opne", "opeq", "opand", "opor", "opplus", "id", "num",
     "lbrace", "rbrace", "semicolon", "opassign", "kwchar", "kwint", "kwreturn", "kwwhile", "kwfor", "kwif", "kwelse", "kwswitch", "kwin", "kwout", "colon", "end"};
     vector<string> non_term = { "d", "E", "E7", "E6", "E5", "E4", "E3", "E2", "E1", "ArgList", "ArgList_", "StmtList", "DeclStmt", "Type", "DeclStmt_", 
     "ParamList", "DeclVarList_", "InitVar", "ParamList_", "Stmt", "DeclStmt", "AoCallOp", "WhileOp", "ForOp", "IfOp", "SwitchOp", "IOp", "OOp", "AOCall", 
@@ -323,7 +408,7 @@ int main()
         {"Stmt", {"semicolon"}},
         {"Stmt", {"lbrace", "StmtList", "rbrace"}},
         {"Stmt", {"kwreturn", "E", "semicolon"}},
-        {"OtherStmtList", {"Stmt", "StmtList"}},
+        {"OtherStmtList", {"OtherStmt", "OtherStmtList"}},
         {"OtherStmtList", {"epsilon"}},
         {"OtherStmt", {"DeclStmt"}},
         {"OtherStmt", {"AoCallOp"}},
@@ -445,11 +530,14 @@ int main()
         }
         cout << endl;
     }
-    //set<pair<Rule, string>> start = { { { "d", {".", "Stmt"}}, "end"} };
-    set<pair<Rule, string>> start = { { { "e", {".", "E"}}, "end"} };
+    //set<pair<Rule, string>> start = { { { "d", {".", "StmtList"}}, "end"} };
+    bool unpack_flag = true;
+    set<pair<Rule, string>> start;
     set<set<pair<Rule, string>>> I;
+    set<pair<Rule, string>> p;
     vector<set<pair<Rule, string>>> e;
-    auto p = Closure(grammar, F, term, start);
+    start = { { { "e", {".", "E"}}, "end"} };
+    p = Closure(grammar, F, term, start);
     cout << 0 << ": ";
     for (auto& y : p) {
         cout << y.first.first << " -> ";
@@ -460,7 +548,12 @@ int main()
     }
     e.push_back(p);
     cout << endl;
-    I.insert(p);
+    if (unpack_flag) {
+        unpack(I);
+    }
+    else {
+        I.insert(p);
+    }
     set<set<pair<Rule, string>>> C = items(I, grammar, F, alphabet, term);
     int counter = 1;
     for (auto& x : C) {
