@@ -17,6 +17,7 @@ vector<string> eps;
 map<set<pair<Rule, string>>, map<string, set<pair<Rule, string>>>> items_goto;
 int backup_counter = 1;
 
+
 void unpack(set<set<pair<Rule, string>>>& I) {
     filebuf fb1;
     if (fb1.open("backup.txt", ios::in)) {

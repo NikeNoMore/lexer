@@ -393,6 +393,8 @@ void translator(pair<Lexem, int>& node, map<pair<Lexem, int>, vector<pair<Lexem,
     }
 }
 
+
+
 int main()
 {
     /*

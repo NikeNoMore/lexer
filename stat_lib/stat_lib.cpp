@@ -30,4 +30,5 @@ Lexem Lexer::getNextLexem() {
         lex = res.second;
     }
     return lex;
+
 }
